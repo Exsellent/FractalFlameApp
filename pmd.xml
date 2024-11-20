@@ -6,7 +6,11 @@
 
     <description>Tweaked project rulesets</description>
 
+<<<<<<< HEAD
     <exclude-pattern>backend/academy/samples/.*</exclude-pattern>
+=======
+    <exclude-pattern>backend/academy/.*</exclude-pattern>
+>>>>>>> 4ba75ba (Creating project source components)
 
     <rule ref="category/java/codestyle.xml/TooManyStaticImports">
         <properties>

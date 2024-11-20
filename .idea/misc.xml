@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectResources">
+    <resource url="C:\Java\plugins" location="$PROJECT_DIR$" />
+    <resource url="http://pmd.sourceforge.net/ruleset/2.0.0" location="$PROJECT_DIR$" />
+    <resource url="https://checkstyle.org/dtds/configuration_1_3.dtd" location="$PROJECT_DIR$" />
+    <resource url="https://checkstyle.org/dtds/suppressions_1_2.dtd" location="$PROJECT_DIR$" />
+    <resource url="https://pmd.github.io/ruleset/2.0.0" location="$PROJECT_DIR$" />
+    <resource url="https://pmd.sourceforge.io/ruleset_2_0_0.xsd " location="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_X" default="true" project-jdk-name="22" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/../../jdk22/jdk-22" />
+  </component>
+</project>
