@@ -1,16 +1,19 @@
 package backend.academy.FractalFlame.components;
 
 /**
- * Фрактальное изображение, использующее массив объектов {@link Pixel}.
- * Содержит данные о пикселях, а также ширину и высоту изображения.
+ * Фрактальное изображение, использующее массив объектов {@link Pixel}. Содержит данные о пикселях, а также ширину и
+ * высоту изображения.
  */
 public record FractalImage(Pixel[] data, int width, int height) implements IFractalImage {
 
     /**
      * Создает новое фрактальное изображение с заданной шириной и высотой.
      *
-     * @param width  ширина изображения
-     * @param height высота изображения
+     * @param width
+     *            ширина изображения
+     * @param height
+     *            высота изображения
+     *
      * @return новый объект {@code FractalImage}
      */
     public static FractalImage create(int width, int height) {
@@ -24,8 +27,11 @@ public record FractalImage(Pixel[] data, int width, int height) implements IFrac
     /**
      * Проверяет, содержится ли точка с координатами (x, y) внутри изображения.
      *
-     * @param x координата x
-     * @param y координата y
+     * @param x
+     *            координата x
+     * @param y
+     *            координата y
+     *
      * @return {@code true}, если точка находится внутри изображения, иначе {@code false}
      */
     public boolean contains(int x, int y) {
@@ -35,8 +41,11 @@ public record FractalImage(Pixel[] data, int width, int height) implements IFrac
     /**
      * Возвращает пиксель по заданным координатам (x, y).
      *
-     * @param x координата x
-     * @param y координата y
+     * @param x
+     *            координата x
+     * @param y
+     *            координата y
+     *
      * @return пиксель по заданным координатам или {@code null}, если координаты вне изображения
      */
     public Pixel pixel(int x, int y) {
@@ -49,9 +58,12 @@ public record FractalImage(Pixel[] data, int width, int height) implements IFrac
     /**
      * Обновляет пиксель по заданным координатам (x, y) новым значением.
      *
-     * @param x координата x
-     * @param y координата y
-     * @param newPixel новый пиксель
+     * @param x
+     *            координата x
+     * @param y
+     *            координата y
+     * @param newPixel
+     *            новый пиксель
      */
     public void updatePixel(int x, int y, Pixel newPixel) {
         if (contains(x, y)) {

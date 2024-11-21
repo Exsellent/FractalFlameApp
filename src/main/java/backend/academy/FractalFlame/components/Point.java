@@ -9,11 +9,12 @@ public class Point {
     private final double z;
 
     /**
-     * Создает точку в двухмерном пространстве с координатами x и y.
-     * Координата z по умолчанию равна 0.0.
+     * Создает точку в двухмерном пространстве с координатами x и y. Координата z по умолчанию равна 0.0.
      *
-     * @param x координата x
-     * @param y координата y
+     * @param x
+     *            координата x
+     * @param y
+     *            координата y
      */
     public Point(double x, double y) {
         this(x, y, 0.0);
@@ -22,9 +23,12 @@ public class Point {
     /**
      * Создает точку в трехмерном пространстве с координатами x, y и z.
      *
-     * @param x координата x
-     * @param y координата y
-     * @param z координата z
+     * @param x
+     *            координата x
+     * @param y
+     *            координата y
+     * @param z
+     *            координата z
      */
     public Point(double x, double y, double z) {
         this.x = x;

@@ -1,20 +1,28 @@
 package backend.academy.FractalFlame.components;
 
 /**
- * Представляет синхронизированное фрактальное изображение с пикселями и механизмом блокировки для потокобезопасного доступа.
+ * Представляет синхронизированное фрактальное изображение с пикселями и механизмом блокировки для потокобезопасного
+ * доступа.
  *
- * @param data   массив пикселей изображения
- * @param width  ширина изображения
- * @param height высота изображения
- * @param locks  массив объектов для синхронизации доступа к пикселям
+ * @param data
+ *            массив пикселей изображения
+ * @param width
+ *            ширина изображения
+ * @param height
+ *            высота изображения
+ * @param locks
+ *            массив объектов для синхронизации доступа к пикселям
  */
 public record SyncFractalImage(Pixel[] data, int width, int height, Object[] locks) implements IFractalImage {
 
     /**
      * Создает новое синхронизированное фрактальное изображение с заданной шириной и высотой.
      *
-     * @param width  ширина изображения
-     * @param height высота изображения
+     * @param width
+     *            ширина изображения
+     * @param height
+     *            высота изображения
+     *
      * @return новый объект {@code SyncFractalImage}
      */
     public static SyncFractalImage create(int width, int height) {
@@ -33,8 +41,11 @@ public record SyncFractalImage(Pixel[] data, int width, int height, Object[] loc
     /**
      * Проверяет, содержится ли точка с координатами (x, y) внутри изображения.
      *
-     * @param x координата x
-     * @param y координата y
+     * @param x
+     *            координата x
+     * @param y
+     *            координата y
+     *
      * @return {@code true}, если точка находится внутри изображения, иначе {@code false}
      */
     public boolean contains(int x, int y) {
@@ -44,8 +55,11 @@ public record SyncFractalImage(Pixel[] data, int width, int height, Object[] loc
     /**
      * Возвращает пиксель по заданным координатам (x, y) с использованием синхронизации.
      *
-     * @param x координата x
-     * @param y координата y
+     * @param x
+     *            координата x
+     * @param y
+     *            координата y
+     *
      * @return пиксель по заданным координатам или {@code null}, если координаты вне изображения
      */
     public Pixel pixel(int x, int y) {
@@ -58,12 +72,14 @@ public record SyncFractalImage(Pixel[] data, int width, int height, Object[] loc
     }
 
     /**
-     * Обновляет пиксель по заданным координатам (x, y) новым значением
-     * с использованием синхронизации.
+     * Обновляет пиксель по заданным координатам (x, y) новым значением с использованием синхронизации.
      *
-     * @param x        координата x
-     * @param y        координата y
-     * @param newPixel новый пиксель
+     * @param x
+     *            координата x
+     * @param y
+     *            координата y
+     * @param newPixel
+     *            новый пиксель
      */
     public void updatePixel(int x, int y, Pixel newPixel) {
         if (contains(x, y)) {
@@ -73,15 +89,18 @@ public record SyncFractalImage(Pixel[] data, int width, int height, Object[] loc
         }
     }
 
-    @Override public int getWidth() {
+    @Override
+    public int getWidth() {
         return width;
     }
 
-    @Override public int getHeight() {
+    @Override
+    public int getHeight() {
         return height;
     }
 
-    @Override public Pixel[] getData() {
+    @Override
+    public Pixel[] getData() {
         return data;
     }
 }
