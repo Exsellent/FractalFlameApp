@@ -26,8 +26,12 @@
  #
  #/src/main/java/backend/academy/Draft/
  #
- ## Игнорировать временные файлы с суффиксом ~
- #*.~
+ # Игнорирование временных файлов
  *~
  *.bak
  *.tmp
+ *.swp
+ *.DS_Store
+ Thumbs.db
+ target/
+ out/
