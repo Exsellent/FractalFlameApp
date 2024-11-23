@@ -11,8 +11,7 @@ import java.util.Random;
 /**
  * Класс для одиночного рендеринга фрактальных изображений.
  * <p>
- * Этот класс реализует методы для рендеринга фрактальных изображений
- * с использованием одного потока.
+ * Этот класс реализует методы для рендеринга фрактальных изображений с использованием одного потока.
  * </p>
  *
  * @since 1.0
@@ -24,7 +23,8 @@ public class SingleRenderer extends AbstractRenderer {
     /**
      * Конструктор для создания одиночного рендерера.
      *
-     * @param symmetry симметрия
+     * @param symmetry
+     *            симметрия
      */
     public SingleRenderer(int symmetry) {
         this.symmetry = symmetry;
@@ -33,24 +33,26 @@ public class SingleRenderer extends AbstractRenderer {
     /**
      * Рендерит фрактальное изображение на холсте.
      *
-     * @param canvas        холст для рендеринга
-     * @param world         прямоугольная область мира
-     * @param affine        список цветовых преобразований
-     * @param variations    список вариаций преобразований
-     * @param samples       количество образцов
-     * @param iterPerSample количество итераций на образец
-     * @param seed          начальное значение для генератора случайных чисел
+     * @param canvas
+     *            холст для рендеринга
+     * @param world
+     *            прямоугольная область мира
+     * @param affine
+     *            список цветовых преобразований
+     * @param variations
+     *            список вариаций преобразований
+     * @param samples
+     *            количество образцов
+     * @param iterPerSample
+     *            количество итераций на образец
+     * @param seed
+     *            начальное значение для генератора случайных чисел
+     *
      * @return сгенерированное фрактальное изображение
      */
-    @Override public IFractalImage render(
-        IFractalImage canvas,
-        Rectangular world,
-        List<ColorTransformation> affine,
-        List<Transformation> variations,
-        int samples,
-        int iterPerSample,
-        int seed
-    ) {
+    @Override
+    public IFractalImage render(IFractalImage canvas, Rectangular world, List<ColorTransformation> affine,
+            List<Transformation> variations, int samples, int iterPerSample, int seed) {
         Random random = new Random(seed);
 
         for (int i = 0; i < samples; i++) {

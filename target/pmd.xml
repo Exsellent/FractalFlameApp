@@ -1,0 +1,1413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd" version="6.42.0" timestamp="2024-11-23T10:49:30.472">
+<error filename="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\components\Pixel.java" msg="PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\components\Pixel.java">
+<![CDATA[net.sourceforge.pmd.PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\components\Pixel.java
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:128)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:100)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:62)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:85)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:29)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: java.lang.IllegalArgumentException: Unsupported class file major version 66
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:199)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:180)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:166)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:287)
+	at net.sourceforge.pmd.lang.java.typeresolution.PMDASMClassLoader.getImportedClasses(PMDASMClassLoader.java:118)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.populateClassName(ClassTypeResolver.java:1639)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.visit(ClassTypeResolver.java:216)
+	at net.sourceforge.pmd.lang.java.ast.ASTCompilationUnit.jjtAccept(ASTCompilationUnit.java:44)
+	at net.sourceforge.pmd.lang.java.typeresolution.TypeResolutionFacade.initializeWith(TypeResolutionFacade.java:21)
+	at net.sourceforge.pmd.lang.java.AbstractJavaHandler$5.start(AbstractJavaHandler.java:121)
+	at net.sourceforge.pmd.SourceCodeProcessor.usesTypeResolution(SourceCodeProcessor.java:178)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSource(SourceCodeProcessor.java:205)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:118)
+	... 10 more
+]]>
+</error>
+<error filename="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\FractalFlameApp.java" msg="PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\FractalFlameApp.java">
+<![CDATA[net.sourceforge.pmd.PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\FractalFlameApp.java
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:128)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:100)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:62)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:85)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:29)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: java.lang.IllegalArgumentException: Unsupported class file major version 66
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:199)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:180)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:166)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:287)
+	at net.sourceforge.pmd.lang.java.typeresolution.PMDASMClassLoader.getImportedClasses(PMDASMClassLoader.java:118)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.populateClassName(ClassTypeResolver.java:1639)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.visit(ClassTypeResolver.java:216)
+	at net.sourceforge.pmd.lang.java.ast.ASTCompilationUnit.jjtAccept(ASTCompilationUnit.java:44)
+	at net.sourceforge.pmd.lang.java.typeresolution.TypeResolutionFacade.initializeWith(TypeResolutionFacade.java:21)
+	at net.sourceforge.pmd.lang.java.AbstractJavaHandler$5.start(AbstractJavaHandler.java:121)
+	at net.sourceforge.pmd.SourceCodeProcessor.usesTypeResolution(SourceCodeProcessor.java:178)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSource(SourceCodeProcessor.java:205)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:118)
+	... 10 more
+]]>
+</error>
+<error filename="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\components\FractalImage.java" msg="PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\components\FractalImage.java">
+<![CDATA[net.sourceforge.pmd.PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\components\FractalImage.java
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:128)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:100)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:62)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:85)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:29)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: java.lang.IllegalArgumentException: Unsupported class file major version 66
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:199)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:180)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:166)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:287)
+	at net.sourceforge.pmd.lang.java.typeresolution.PMDASMClassLoader.getImportedClasses(PMDASMClassLoader.java:118)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.populateClassName(ClassTypeResolver.java:1639)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.visit(ClassTypeResolver.java:216)
+	at net.sourceforge.pmd.lang.java.ast.ASTCompilationUnit.jjtAccept(ASTCompilationUnit.java:44)
+	at net.sourceforge.pmd.lang.java.typeresolution.TypeResolutionFacade.initializeWith(TypeResolutionFacade.java:21)
+	at net.sourceforge.pmd.lang.java.AbstractJavaHandler$5.start(AbstractJavaHandler.java:121)
+	at net.sourceforge.pmd.SourceCodeProcessor.usesTypeResolution(SourceCodeProcessor.java:178)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSource(SourceCodeProcessor.java:205)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:118)
+	... 10 more
+]]>
+</error>
+<error filename="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\components\Color.java" msg="PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\components\Color.java">
+<![CDATA[net.sourceforge.pmd.PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\components\Color.java
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:128)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:100)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:62)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:85)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:29)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: java.lang.IllegalArgumentException: Unsupported class file major version 66
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:199)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:180)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:166)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:287)
+	at net.sourceforge.pmd.lang.java.typeresolution.PMDASMClassLoader.getImportedClasses(PMDASMClassLoader.java:118)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.populateClassName(ClassTypeResolver.java:1639)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.visit(ClassTypeResolver.java:216)
+	at net.sourceforge.pmd.lang.java.ast.ASTCompilationUnit.jjtAccept(ASTCompilationUnit.java:44)
+	at net.sourceforge.pmd.lang.java.typeresolution.TypeResolutionFacade.initializeWith(TypeResolutionFacade.java:21)
+	at net.sourceforge.pmd.lang.java.AbstractJavaHandler$5.start(AbstractJavaHandler.java:121)
+	at net.sourceforge.pmd.SourceCodeProcessor.usesTypeResolution(SourceCodeProcessor.java:178)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSource(SourceCodeProcessor.java:205)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:118)
+	... 10 more
+]]>
+</error>
+<error filename="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\components\IFractalImage.java" msg="PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\components\IFractalImage.java">
+<![CDATA[net.sourceforge.pmd.PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\components\IFractalImage.java
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:128)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:100)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:62)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:85)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:29)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: java.lang.IllegalArgumentException: Unsupported class file major version 66
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:199)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:180)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:166)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:287)
+	at net.sourceforge.pmd.lang.java.typeresolution.PMDASMClassLoader.getImportedClasses(PMDASMClassLoader.java:118)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.populateClassName(ClassTypeResolver.java:1639)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.visit(ClassTypeResolver.java:216)
+	at net.sourceforge.pmd.lang.java.ast.ASTCompilationUnit.jjtAccept(ASTCompilationUnit.java:44)
+	at net.sourceforge.pmd.lang.java.typeresolution.TypeResolutionFacade.initializeWith(TypeResolutionFacade.java:21)
+	at net.sourceforge.pmd.lang.java.AbstractJavaHandler$5.start(AbstractJavaHandler.java:121)
+	at net.sourceforge.pmd.SourceCodeProcessor.usesTypeResolution(SourceCodeProcessor.java:178)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSource(SourceCodeProcessor.java:205)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:118)
+	... 10 more
+]]>
+</error>
+<error filename="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\Main.java" msg="PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\Main.java">
+<![CDATA[net.sourceforge.pmd.PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\Main.java
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:128)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:100)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:62)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:85)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:29)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: java.lang.IllegalArgumentException: Unsupported class file major version 66
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:199)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:180)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:166)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:287)
+	at net.sourceforge.pmd.lang.java.typeresolution.PMDASMClassLoader.getImportedClasses(PMDASMClassLoader.java:118)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.populateClassName(ClassTypeResolver.java:1639)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.visit(ClassTypeResolver.java:216)
+	at net.sourceforge.pmd.lang.java.ast.ASTCompilationUnit.jjtAccept(ASTCompilationUnit.java:44)
+	at net.sourceforge.pmd.lang.java.typeresolution.TypeResolutionFacade.initializeWith(TypeResolutionFacade.java:21)
+	at net.sourceforge.pmd.lang.java.AbstractJavaHandler$5.start(AbstractJavaHandler.java:121)
+	at net.sourceforge.pmd.SourceCodeProcessor.usesTypeResolution(SourceCodeProcessor.java:178)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSource(SourceCodeProcessor.java:205)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:118)
+	... 10 more
+]]>
+</error>
+<error filename="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\components\AffineTransformation.java" msg="PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\components\AffineTransformation.java">
+<![CDATA[net.sourceforge.pmd.PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\components\AffineTransformation.java
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:128)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:100)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:62)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:85)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:29)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: java.lang.IllegalArgumentException: Unsupported class file major version 66
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:199)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:180)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:166)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:287)
+	at net.sourceforge.pmd.lang.java.typeresolution.PMDASMClassLoader.getImportedClasses(PMDASMClassLoader.java:118)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.populateClassName(ClassTypeResolver.java:1639)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.visit(ClassTypeResolver.java:216)
+	at net.sourceforge.pmd.lang.java.ast.ASTCompilationUnit.jjtAccept(ASTCompilationUnit.java:44)
+	at net.sourceforge.pmd.lang.java.typeresolution.TypeResolutionFacade.initializeWith(TypeResolutionFacade.java:21)
+	at net.sourceforge.pmd.lang.java.AbstractJavaHandler$5.start(AbstractJavaHandler.java:121)
+	at net.sourceforge.pmd.SourceCodeProcessor.usesTypeResolution(SourceCodeProcessor.java:178)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSource(SourceCodeProcessor.java:205)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:118)
+	... 10 more
+]]>
+</error>
+<error filename="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\components\Rectangular.java" msg="PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\components\Rectangular.java">
+<![CDATA[net.sourceforge.pmd.PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\components\Rectangular.java
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:128)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:100)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:62)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:85)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:29)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: java.lang.IllegalArgumentException: Unsupported class file major version 66
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:199)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:180)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:166)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:287)
+	at net.sourceforge.pmd.lang.java.typeresolution.PMDASMClassLoader.getImportedClasses(PMDASMClassLoader.java:118)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.populateClassName(ClassTypeResolver.java:1639)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.visit(ClassTypeResolver.java:216)
+	at net.sourceforge.pmd.lang.java.ast.ASTCompilationUnit.jjtAccept(ASTCompilationUnit.java:44)
+	at net.sourceforge.pmd.lang.java.typeresolution.TypeResolutionFacade.initializeWith(TypeResolutionFacade.java:21)
+	at net.sourceforge.pmd.lang.java.AbstractJavaHandler$5.start(AbstractJavaHandler.java:121)
+	at net.sourceforge.pmd.SourceCodeProcessor.usesTypeResolution(SourceCodeProcessor.java:178)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSource(SourceCodeProcessor.java:205)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:118)
+	... 10 more
+]]>
+</error>
+<error filename="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\processors\ImageProcessor.java" msg="PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\processors\ImageProcessor.java">
+<![CDATA[net.sourceforge.pmd.PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\processors\ImageProcessor.java
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:128)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:100)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:62)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:85)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:29)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: java.lang.IllegalArgumentException: Unsupported class file major version 66
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:199)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:180)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:166)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:287)
+	at net.sourceforge.pmd.lang.java.typeresolution.PMDASMClassLoader.getImportedClasses(PMDASMClassLoader.java:118)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.populateClassName(ClassTypeResolver.java:1639)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.visit(ClassTypeResolver.java:216)
+	at net.sourceforge.pmd.lang.java.ast.ASTCompilationUnit.jjtAccept(ASTCompilationUnit.java:44)
+	at net.sourceforge.pmd.lang.java.typeresolution.TypeResolutionFacade.initializeWith(TypeResolutionFacade.java:21)
+	at net.sourceforge.pmd.lang.java.AbstractJavaHandler$5.start(AbstractJavaHandler.java:121)
+	at net.sourceforge.pmd.SourceCodeProcessor.usesTypeResolution(SourceCodeProcessor.java:178)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSource(SourceCodeProcessor.java:205)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:118)
+	... 10 more
+]]>
+</error>
+<error filename="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\config\ConfigLoader.java" msg="PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\config\ConfigLoader.java">
+<![CDATA[net.sourceforge.pmd.PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\config\ConfigLoader.java
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:128)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:100)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:62)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:85)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:29)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: java.lang.IllegalArgumentException: Unsupported class file major version 66
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:199)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:180)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:166)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:287)
+	at net.sourceforge.pmd.lang.java.typeresolution.PMDASMClassLoader.getImportedClasses(PMDASMClassLoader.java:118)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.populateClassName(ClassTypeResolver.java:1639)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.visit(ClassTypeResolver.java:216)
+	at net.sourceforge.pmd.lang.java.ast.ASTCompilationUnit.jjtAccept(ASTCompilationUnit.java:44)
+	at net.sourceforge.pmd.lang.java.typeresolution.TypeResolutionFacade.initializeWith(TypeResolutionFacade.java:21)
+	at net.sourceforge.pmd.lang.java.AbstractJavaHandler$5.start(AbstractJavaHandler.java:121)
+	at net.sourceforge.pmd.SourceCodeProcessor.usesTypeResolution(SourceCodeProcessor.java:178)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSource(SourceCodeProcessor.java:205)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:118)
+	... 10 more
+]]>
+</error>
+<error filename="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\components\SyncFractalImage.java" msg="PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\components\SyncFractalImage.java">
+<![CDATA[net.sourceforge.pmd.PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\components\SyncFractalImage.java
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:128)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:100)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:62)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:85)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:29)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: java.lang.IllegalArgumentException: Unsupported class file major version 66
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:199)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:180)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:166)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:287)
+	at net.sourceforge.pmd.lang.java.typeresolution.PMDASMClassLoader.getImportedClasses(PMDASMClassLoader.java:118)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.populateClassName(ClassTypeResolver.java:1639)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.visit(ClassTypeResolver.java:216)
+	at net.sourceforge.pmd.lang.java.ast.ASTCompilationUnit.jjtAccept(ASTCompilationUnit.java:44)
+	at net.sourceforge.pmd.lang.java.typeresolution.TypeResolutionFacade.initializeWith(TypeResolutionFacade.java:21)
+	at net.sourceforge.pmd.lang.java.AbstractJavaHandler$5.start(AbstractJavaHandler.java:121)
+	at net.sourceforge.pmd.SourceCodeProcessor.usesTypeResolution(SourceCodeProcessor.java:178)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSource(SourceCodeProcessor.java:205)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:118)
+	... 10 more
+]]>
+</error>
+<error filename="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\components\Point.java" msg="PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\components\Point.java">
+<![CDATA[net.sourceforge.pmd.PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\components\Point.java
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:128)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:100)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:62)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:85)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:29)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: java.lang.IllegalArgumentException: Unsupported class file major version 66
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:199)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:180)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:166)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:287)
+	at net.sourceforge.pmd.lang.java.typeresolution.PMDASMClassLoader.getImportedClasses(PMDASMClassLoader.java:118)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.populateClassName(ClassTypeResolver.java:1639)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.visit(ClassTypeResolver.java:216)
+	at net.sourceforge.pmd.lang.java.ast.ASTCompilationUnit.jjtAccept(ASTCompilationUnit.java:44)
+	at net.sourceforge.pmd.lang.java.typeresolution.TypeResolutionFacade.initializeWith(TypeResolutionFacade.java:21)
+	at net.sourceforge.pmd.lang.java.AbstractJavaHandler$5.start(AbstractJavaHandler.java:121)
+	at net.sourceforge.pmd.SourceCodeProcessor.usesTypeResolution(SourceCodeProcessor.java:178)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSource(SourceCodeProcessor.java:205)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:118)
+	... 10 more
+]]>
+</error>
+<error filename="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\processors\LogarithmicGammaCorrectionProcessor.java" msg="PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\processors\LogarithmicGammaCorrectionProcessor.java">
+<![CDATA[net.sourceforge.pmd.PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\processors\LogarithmicGammaCorrectionProcessor.java
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:128)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:100)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:62)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:85)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:29)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: java.lang.IllegalArgumentException: Unsupported class file major version 66
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:199)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:180)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:166)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:287)
+	at net.sourceforge.pmd.lang.java.typeresolution.PMDASMClassLoader.getImportedClasses(PMDASMClassLoader.java:118)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.populateClassName(ClassTypeResolver.java:1639)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.visit(ClassTypeResolver.java:216)
+	at net.sourceforge.pmd.lang.java.ast.ASTCompilationUnit.jjtAccept(ASTCompilationUnit.java:44)
+	at net.sourceforge.pmd.lang.java.typeresolution.TypeResolutionFacade.initializeWith(TypeResolutionFacade.java:21)
+	at net.sourceforge.pmd.lang.java.AbstractJavaHandler$5.start(AbstractJavaHandler.java:121)
+	at net.sourceforge.pmd.SourceCodeProcessor.usesTypeResolution(SourceCodeProcessor.java:178)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSource(SourceCodeProcessor.java:205)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:118)
+	... 10 more
+]]>
+</error>
+<error filename="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\processors\GammaCorrectionProcessor.java" msg="PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\processors\GammaCorrectionProcessor.java">
+<![CDATA[net.sourceforge.pmd.PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\processors\GammaCorrectionProcessor.java
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:128)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:100)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:62)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:85)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:29)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: java.lang.IllegalArgumentException: Unsupported class file major version 66
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:199)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:180)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:166)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:287)
+	at net.sourceforge.pmd.lang.java.typeresolution.PMDASMClassLoader.getImportedClasses(PMDASMClassLoader.java:118)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.populateClassName(ClassTypeResolver.java:1639)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.visit(ClassTypeResolver.java:216)
+	at net.sourceforge.pmd.lang.java.ast.ASTCompilationUnit.jjtAccept(ASTCompilationUnit.java:44)
+	at net.sourceforge.pmd.lang.java.typeresolution.TypeResolutionFacade.initializeWith(TypeResolutionFacade.java:21)
+	at net.sourceforge.pmd.lang.java.AbstractJavaHandler$5.start(AbstractJavaHandler.java:121)
+	at net.sourceforge.pmd.SourceCodeProcessor.usesTypeResolution(SourceCodeProcessor.java:178)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSource(SourceCodeProcessor.java:205)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:118)
+	... 10 more
+]]>
+</error>
+<error filename="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\renderers\Renderer.java" msg="PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\renderers\Renderer.java">
+<![CDATA[net.sourceforge.pmd.PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\renderers\Renderer.java
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:128)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:100)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:62)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:85)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:29)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: java.lang.IllegalArgumentException: Unsupported class file major version 66
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:199)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:180)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:166)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:287)
+	at net.sourceforge.pmd.lang.java.typeresolution.PMDASMClassLoader.getImportedClasses(PMDASMClassLoader.java:118)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.populateClassName(ClassTypeResolver.java:1639)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.visit(ClassTypeResolver.java:216)
+	at net.sourceforge.pmd.lang.java.ast.ASTCompilationUnit.jjtAccept(ASTCompilationUnit.java:44)
+	at net.sourceforge.pmd.lang.java.typeresolution.TypeResolutionFacade.initializeWith(TypeResolutionFacade.java:21)
+	at net.sourceforge.pmd.lang.java.AbstractJavaHandler$5.start(AbstractJavaHandler.java:121)
+	at net.sourceforge.pmd.SourceCodeProcessor.usesTypeResolution(SourceCodeProcessor.java:178)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSource(SourceCodeProcessor.java:205)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:118)
+	... 10 more
+]]>
+</error>
+<error filename="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\Launcher.java" msg="PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\Launcher.java">
+<![CDATA[net.sourceforge.pmd.PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\Launcher.java
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:128)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:100)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:62)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:85)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:29)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: java.lang.IllegalArgumentException: Unsupported class file major version 66
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:199)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:180)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:166)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:287)
+	at net.sourceforge.pmd.lang.java.typeresolution.PMDASMClassLoader.getImportedClasses(PMDASMClassLoader.java:118)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.populateClassName(ClassTypeResolver.java:1639)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.visit(ClassTypeResolver.java:216)
+	at net.sourceforge.pmd.lang.java.ast.ASTCompilationUnit.jjtAccept(ASTCompilationUnit.java:44)
+	at net.sourceforge.pmd.lang.java.typeresolution.TypeResolutionFacade.initializeWith(TypeResolutionFacade.java:21)
+	at net.sourceforge.pmd.lang.java.AbstractJavaHandler$5.start(AbstractJavaHandler.java:121)
+	at net.sourceforge.pmd.SourceCodeProcessor.usesTypeResolution(SourceCodeProcessor.java:178)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSource(SourceCodeProcessor.java:205)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:118)
+	... 10 more
+]]>
+</error>
+<error filename="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\config\Config.java" msg="PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\config\Config.java">
+<![CDATA[net.sourceforge.pmd.PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\config\Config.java
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:128)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:100)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:62)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:85)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:29)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: java.lang.IllegalArgumentException: Unsupported class file major version 66
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:199)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:180)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:166)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:287)
+	at net.sourceforge.pmd.lang.java.typeresolution.PMDASMClassLoader.getImportedClasses(PMDASMClassLoader.java:118)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.populateClassName(ClassTypeResolver.java:1639)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.visit(ClassTypeResolver.java:216)
+	at net.sourceforge.pmd.lang.java.ast.ASTCompilationUnit.jjtAccept(ASTCompilationUnit.java:44)
+	at net.sourceforge.pmd.lang.java.typeresolution.TypeResolutionFacade.initializeWith(TypeResolutionFacade.java:21)
+	at net.sourceforge.pmd.lang.java.AbstractJavaHandler$5.start(AbstractJavaHandler.java:121)
+	at net.sourceforge.pmd.SourceCodeProcessor.usesTypeResolution(SourceCodeProcessor.java:178)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSource(SourceCodeProcessor.java:205)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:118)
+	... 10 more
+]]>
+</error>
+<error filename="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\transformations\ColorTransformation.java" msg="PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\transformations\ColorTransformation.java">
+<![CDATA[net.sourceforge.pmd.PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\transformations\ColorTransformation.java
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:128)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:100)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:62)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:85)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:29)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: java.lang.IllegalArgumentException: Unsupported class file major version 66
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:199)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:180)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:166)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:287)
+	at net.sourceforge.pmd.lang.java.typeresolution.PMDASMClassLoader.getImportedClasses(PMDASMClassLoader.java:118)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.populateClassName(ClassTypeResolver.java:1639)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.visit(ClassTypeResolver.java:216)
+	at net.sourceforge.pmd.lang.java.ast.ASTCompilationUnit.jjtAccept(ASTCompilationUnit.java:44)
+	at net.sourceforge.pmd.lang.java.typeresolution.TypeResolutionFacade.initializeWith(TypeResolutionFacade.java:21)
+	at net.sourceforge.pmd.lang.java.AbstractJavaHandler$5.start(AbstractJavaHandler.java:121)
+	at net.sourceforge.pmd.SourceCodeProcessor.usesTypeResolution(SourceCodeProcessor.java:178)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSource(SourceCodeProcessor.java:205)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:118)
+	... 10 more
+]]>
+</error>
+<error filename="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\renderers\AbstractRenderer.java" msg="PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\renderers\AbstractRenderer.java">
+<![CDATA[net.sourceforge.pmd.PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\renderers\AbstractRenderer.java
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:128)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:100)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:62)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:85)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:29)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: java.lang.IllegalArgumentException: Unsupported class file major version 66
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:199)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:180)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:166)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:287)
+	at net.sourceforge.pmd.lang.java.typeresolution.PMDASMClassLoader.getImportedClasses(PMDASMClassLoader.java:118)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.populateClassName(ClassTypeResolver.java:1639)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.visit(ClassTypeResolver.java:216)
+	at net.sourceforge.pmd.lang.java.ast.ASTCompilationUnit.jjtAccept(ASTCompilationUnit.java:44)
+	at net.sourceforge.pmd.lang.java.typeresolution.TypeResolutionFacade.initializeWith(TypeResolutionFacade.java:21)
+	at net.sourceforge.pmd.lang.java.AbstractJavaHandler$5.start(AbstractJavaHandler.java:121)
+	at net.sourceforge.pmd.SourceCodeProcessor.usesTypeResolution(SourceCodeProcessor.java:178)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSource(SourceCodeProcessor.java:205)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:118)
+	... 10 more
+]]>
+</error>
+<error filename="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\renderers\RenderPerformanceTester.java" msg="PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\renderers\RenderPerformanceTester.java">
+<![CDATA[net.sourceforge.pmd.PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\renderers\RenderPerformanceTester.java
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:128)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:100)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:62)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:85)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:29)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: java.lang.IllegalArgumentException: Unsupported class file major version 66
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:199)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:180)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:166)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:287)
+	at net.sourceforge.pmd.lang.java.typeresolution.PMDASMClassLoader.getImportedClasses(PMDASMClassLoader.java:118)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.populateClassName(ClassTypeResolver.java:1639)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.visit(ClassTypeResolver.java:216)
+	at net.sourceforge.pmd.lang.java.ast.ASTCompilationUnit.jjtAccept(ASTCompilationUnit.java:44)
+	at net.sourceforge.pmd.lang.java.typeresolution.TypeResolutionFacade.initializeWith(TypeResolutionFacade.java:21)
+	at net.sourceforge.pmd.lang.java.AbstractJavaHandler$5.start(AbstractJavaHandler.java:121)
+	at net.sourceforge.pmd.SourceCodeProcessor.usesTypeResolution(SourceCodeProcessor.java:178)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSource(SourceCodeProcessor.java:205)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:118)
+	... 10 more
+]]>
+</error>
+<error filename="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\renderers\RenderConfig.java" msg="PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\renderers\RenderConfig.java">
+<![CDATA[net.sourceforge.pmd.PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\renderers\RenderConfig.java
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:128)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:100)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:62)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:85)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:29)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: java.lang.IllegalArgumentException: Unsupported class file major version 66
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:199)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:180)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:166)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:287)
+	at net.sourceforge.pmd.lang.java.typeresolution.PMDASMClassLoader.getImportedClasses(PMDASMClassLoader.java:118)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.populateClassName(ClassTypeResolver.java:1639)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.visit(ClassTypeResolver.java:216)
+	at net.sourceforge.pmd.lang.java.ast.ASTCompilationUnit.jjtAccept(ASTCompilationUnit.java:44)
+	at net.sourceforge.pmd.lang.java.typeresolution.TypeResolutionFacade.initializeWith(TypeResolutionFacade.java:21)
+	at net.sourceforge.pmd.lang.java.AbstractJavaHandler$5.start(AbstractJavaHandler.java:121)
+	at net.sourceforge.pmd.SourceCodeProcessor.usesTypeResolution(SourceCodeProcessor.java:178)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSource(SourceCodeProcessor.java:205)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:118)
+	... 10 more
+]]>
+</error>
+<error filename="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\renderers\SingleRenderer.java" msg="PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\renderers\SingleRenderer.java">
+<![CDATA[net.sourceforge.pmd.PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\renderers\SingleRenderer.java
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:128)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:100)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:62)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:85)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:29)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: java.lang.IllegalArgumentException: Unsupported class file major version 66
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:199)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:180)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:166)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:287)
+	at net.sourceforge.pmd.lang.java.typeresolution.PMDASMClassLoader.getImportedClasses(PMDASMClassLoader.java:118)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.populateClassName(ClassTypeResolver.java:1639)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.visit(ClassTypeResolver.java:216)
+	at net.sourceforge.pmd.lang.java.ast.ASTCompilationUnit.jjtAccept(ASTCompilationUnit.java:44)
+	at net.sourceforge.pmd.lang.java.typeresolution.TypeResolutionFacade.initializeWith(TypeResolutionFacade.java:21)
+	at net.sourceforge.pmd.lang.java.AbstractJavaHandler$5.start(AbstractJavaHandler.java:121)
+	at net.sourceforge.pmd.SourceCodeProcessor.usesTypeResolution(SourceCodeProcessor.java:178)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSource(SourceCodeProcessor.java:205)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:118)
+	... 10 more
+]]>
+</error>
+<error filename="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\transformations\ComplexDragonTransformation.java" msg="PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\transformations\ComplexDragonTransformation.java">
+<![CDATA[net.sourceforge.pmd.PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\transformations\ComplexDragonTransformation.java
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:128)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:100)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:62)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:85)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:29)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: java.lang.IllegalArgumentException: Unsupported class file major version 66
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:199)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:180)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:166)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:287)
+	at net.sourceforge.pmd.lang.java.typeresolution.PMDASMClassLoader.getImportedClasses(PMDASMClassLoader.java:118)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.populateClassName(ClassTypeResolver.java:1639)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.visit(ClassTypeResolver.java:216)
+	at net.sourceforge.pmd.lang.java.ast.ASTCompilationUnit.jjtAccept(ASTCompilationUnit.java:44)
+	at net.sourceforge.pmd.lang.java.typeresolution.TypeResolutionFacade.initializeWith(TypeResolutionFacade.java:21)
+	at net.sourceforge.pmd.lang.java.AbstractJavaHandler$5.start(AbstractJavaHandler.java:121)
+	at net.sourceforge.pmd.SourceCodeProcessor.usesTypeResolution(SourceCodeProcessor.java:178)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSource(SourceCodeProcessor.java:205)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:118)
+	... 10 more
+]]>
+</error>
+<error filename="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\transformations\DiskTransformation.java" msg="PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\transformations\DiskTransformation.java">
+<![CDATA[net.sourceforge.pmd.PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\transformations\DiskTransformation.java
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:128)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:100)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:62)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:85)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:29)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: java.lang.IllegalArgumentException: Unsupported class file major version 66
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:199)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:180)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:166)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:287)
+	at net.sourceforge.pmd.lang.java.typeresolution.PMDASMClassLoader.getImportedClasses(PMDASMClassLoader.java:118)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.populateClassName(ClassTypeResolver.java:1639)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.visit(ClassTypeResolver.java:216)
+	at net.sourceforge.pmd.lang.java.ast.ASTCompilationUnit.jjtAccept(ASTCompilationUnit.java:44)
+	at net.sourceforge.pmd.lang.java.typeresolution.TypeResolutionFacade.initializeWith(TypeResolutionFacade.java:21)
+	at net.sourceforge.pmd.lang.java.AbstractJavaHandler$5.start(AbstractJavaHandler.java:121)
+	at net.sourceforge.pmd.SourceCodeProcessor.usesTypeResolution(SourceCodeProcessor.java:178)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSource(SourceCodeProcessor.java:205)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:118)
+	... 10 more
+]]>
+</error>
+<error filename="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\transformations\DiamondTransformation.java" msg="PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\transformations\DiamondTransformation.java">
+<![CDATA[net.sourceforge.pmd.PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\transformations\DiamondTransformation.java
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:128)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:100)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:62)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:85)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:29)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: java.lang.IllegalArgumentException: Unsupported class file major version 66
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:199)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:180)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:166)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:287)
+	at net.sourceforge.pmd.lang.java.typeresolution.PMDASMClassLoader.getImportedClasses(PMDASMClassLoader.java:118)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.populateClassName(ClassTypeResolver.java:1639)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.visit(ClassTypeResolver.java:216)
+	at net.sourceforge.pmd.lang.java.ast.ASTCompilationUnit.jjtAccept(ASTCompilationUnit.java:44)
+	at net.sourceforge.pmd.lang.java.typeresolution.TypeResolutionFacade.initializeWith(TypeResolutionFacade.java:21)
+	at net.sourceforge.pmd.lang.java.AbstractJavaHandler$5.start(AbstractJavaHandler.java:121)
+	at net.sourceforge.pmd.SourceCodeProcessor.usesTypeResolution(SourceCodeProcessor.java:178)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSource(SourceCodeProcessor.java:205)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:118)
+	... 10 more
+]]>
+</error>
+<error filename="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\transformations\CylinderTransformation.java" msg="PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\transformations\CylinderTransformation.java">
+<![CDATA[net.sourceforge.pmd.PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\transformations\CylinderTransformation.java
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:128)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:100)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:62)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:85)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:29)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: java.lang.IllegalArgumentException: Unsupported class file major version 66
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:199)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:180)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:166)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:287)
+	at net.sourceforge.pmd.lang.java.typeresolution.PMDASMClassLoader.getImportedClasses(PMDASMClassLoader.java:118)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.populateClassName(ClassTypeResolver.java:1639)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.visit(ClassTypeResolver.java:216)
+	at net.sourceforge.pmd.lang.java.ast.ASTCompilationUnit.jjtAccept(ASTCompilationUnit.java:44)
+	at net.sourceforge.pmd.lang.java.typeresolution.TypeResolutionFacade.initializeWith(TypeResolutionFacade.java:21)
+	at net.sourceforge.pmd.lang.java.AbstractJavaHandler$5.start(AbstractJavaHandler.java:121)
+	at net.sourceforge.pmd.SourceCodeProcessor.usesTypeResolution(SourceCodeProcessor.java:178)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSource(SourceCodeProcessor.java:205)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:118)
+	... 10 more
+]]>
+</error>
+<error filename="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\renderers\MultiRenderer.java" msg="PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\renderers\MultiRenderer.java">
+<![CDATA[net.sourceforge.pmd.PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\renderers\MultiRenderer.java
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:128)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:100)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:62)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:85)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:29)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: java.lang.IllegalArgumentException: Unsupported class file major version 66
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:199)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:180)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:166)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:287)
+	at net.sourceforge.pmd.lang.java.typeresolution.PMDASMClassLoader.getImportedClasses(PMDASMClassLoader.java:118)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.populateClassName(ClassTypeResolver.java:1639)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.visit(ClassTypeResolver.java:216)
+	at net.sourceforge.pmd.lang.java.ast.ASTCompilationUnit.jjtAccept(ASTCompilationUnit.java:44)
+	at net.sourceforge.pmd.lang.java.typeresolution.TypeResolutionFacade.initializeWith(TypeResolutionFacade.java:21)
+	at net.sourceforge.pmd.lang.java.AbstractJavaHandler$5.start(AbstractJavaHandler.java:121)
+	at net.sourceforge.pmd.SourceCodeProcessor.usesTypeResolution(SourceCodeProcessor.java:178)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSource(SourceCodeProcessor.java:205)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:118)
+	... 10 more
+]]>
+</error>
+<error filename="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\transformations\HeartTransformation.java" msg="PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\transformations\HeartTransformation.java">
+<![CDATA[net.sourceforge.pmd.PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\transformations\HeartTransformation.java
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:128)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:100)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:62)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:85)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:29)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: java.lang.IllegalArgumentException: Unsupported class file major version 66
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:199)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:180)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:166)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:287)
+	at net.sourceforge.pmd.lang.java.typeresolution.PMDASMClassLoader.getImportedClasses(PMDASMClassLoader.java:118)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.populateClassName(ClassTypeResolver.java:1639)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.visit(ClassTypeResolver.java:216)
+	at net.sourceforge.pmd.lang.java.ast.ASTCompilationUnit.jjtAccept(ASTCompilationUnit.java:44)
+	at net.sourceforge.pmd.lang.java.typeresolution.TypeResolutionFacade.initializeWith(TypeResolutionFacade.java:21)
+	at net.sourceforge.pmd.lang.java.AbstractJavaHandler$5.start(AbstractJavaHandler.java:121)
+	at net.sourceforge.pmd.SourceCodeProcessor.usesTypeResolution(SourceCodeProcessor.java:178)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSource(SourceCodeProcessor.java:205)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:118)
+	... 10 more
+]]>
+</error>
+<error filename="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\renderers\ParallelRenderer.java" msg="PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\renderers\ParallelRenderer.java">
+<![CDATA[net.sourceforge.pmd.PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\renderers\ParallelRenderer.java
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:128)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:100)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:62)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:85)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:29)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: java.lang.IllegalArgumentException: Unsupported class file major version 66
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:199)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:180)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:166)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:287)
+	at net.sourceforge.pmd.lang.java.typeresolution.PMDASMClassLoader.getImportedClasses(PMDASMClassLoader.java:118)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.populateClassName(ClassTypeResolver.java:1639)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.visit(ClassTypeResolver.java:216)
+	at net.sourceforge.pmd.lang.java.ast.ASTCompilationUnit.jjtAccept(ASTCompilationUnit.java:44)
+	at net.sourceforge.pmd.lang.java.typeresolution.TypeResolutionFacade.initializeWith(TypeResolutionFacade.java:21)
+	at net.sourceforge.pmd.lang.java.AbstractJavaHandler$5.start(AbstractJavaHandler.java:121)
+	at net.sourceforge.pmd.SourceCodeProcessor.usesTypeResolution(SourceCodeProcessor.java:178)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSource(SourceCodeProcessor.java:205)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:118)
+	... 10 more
+]]>
+</error>
+<error filename="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\transformations\HyperbolicTransformation.java" msg="PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\transformations\HyperbolicTransformation.java">
+<![CDATA[net.sourceforge.pmd.PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\transformations\HyperbolicTransformation.java
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:128)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:100)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:62)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:85)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:29)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: java.lang.IllegalArgumentException: Unsupported class file major version 66
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:199)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:180)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:166)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:287)
+	at net.sourceforge.pmd.lang.java.typeresolution.PMDASMClassLoader.getImportedClasses(PMDASMClassLoader.java:118)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.populateClassName(ClassTypeResolver.java:1639)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.visit(ClassTypeResolver.java:216)
+	at net.sourceforge.pmd.lang.java.ast.ASTCompilationUnit.jjtAccept(ASTCompilationUnit.java:44)
+	at net.sourceforge.pmd.lang.java.typeresolution.TypeResolutionFacade.initializeWith(TypeResolutionFacade.java:21)
+	at net.sourceforge.pmd.lang.java.AbstractJavaHandler$5.start(AbstractJavaHandler.java:121)
+	at net.sourceforge.pmd.SourceCodeProcessor.usesTypeResolution(SourceCodeProcessor.java:178)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSource(SourceCodeProcessor.java:205)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:118)
+	... 10 more
+]]>
+</error>
+<error filename="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\transformations\MandalaTransformation.java" msg="PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\transformations\MandalaTransformation.java">
+<![CDATA[net.sourceforge.pmd.PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\transformations\MandalaTransformation.java
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:128)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:100)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:62)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:85)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:29)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: java.lang.IllegalArgumentException: Unsupported class file major version 66
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:199)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:180)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:166)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:287)
+	at net.sourceforge.pmd.lang.java.typeresolution.PMDASMClassLoader.getImportedClasses(PMDASMClassLoader.java:118)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.populateClassName(ClassTypeResolver.java:1639)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.visit(ClassTypeResolver.java:216)
+	at net.sourceforge.pmd.lang.java.ast.ASTCompilationUnit.jjtAccept(ASTCompilationUnit.java:44)
+	at net.sourceforge.pmd.lang.java.typeresolution.TypeResolutionFacade.initializeWith(TypeResolutionFacade.java:21)
+	at net.sourceforge.pmd.lang.java.AbstractJavaHandler$5.start(AbstractJavaHandler.java:121)
+	at net.sourceforge.pmd.SourceCodeProcessor.usesTypeResolution(SourceCodeProcessor.java:178)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSource(SourceCodeProcessor.java:205)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:118)
+	... 10 more
+]]>
+</error>
+<error filename="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\transformations\HorseshoeTransformation.java" msg="PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\transformations\HorseshoeTransformation.java">
+<![CDATA[net.sourceforge.pmd.PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\transformations\HorseshoeTransformation.java
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:128)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:100)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:62)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:85)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:29)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: java.lang.IllegalArgumentException: Unsupported class file major version 66
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:199)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:180)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:166)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:287)
+	at net.sourceforge.pmd.lang.java.typeresolution.PMDASMClassLoader.getImportedClasses(PMDASMClassLoader.java:118)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.populateClassName(ClassTypeResolver.java:1639)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.visit(ClassTypeResolver.java:216)
+	at net.sourceforge.pmd.lang.java.ast.ASTCompilationUnit.jjtAccept(ASTCompilationUnit.java:44)
+	at net.sourceforge.pmd.lang.java.typeresolution.TypeResolutionFacade.initializeWith(TypeResolutionFacade.java:21)
+	at net.sourceforge.pmd.lang.java.AbstractJavaHandler$5.start(AbstractJavaHandler.java:121)
+	at net.sourceforge.pmd.SourceCodeProcessor.usesTypeResolution(SourceCodeProcessor.java:178)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSource(SourceCodeProcessor.java:205)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:118)
+	... 10 more
+]]>
+</error>
+<error filename="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\transformations\SphericalTransformation.java" msg="PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\transformations\SphericalTransformation.java">
+<![CDATA[net.sourceforge.pmd.PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\transformations\SphericalTransformation.java
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:128)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:100)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:62)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:85)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:29)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: java.lang.IllegalArgumentException: Unsupported class file major version 66
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:199)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:180)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:166)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:287)
+	at net.sourceforge.pmd.lang.java.typeresolution.PMDASMClassLoader.getImportedClasses(PMDASMClassLoader.java:118)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.populateClassName(ClassTypeResolver.java:1639)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.visit(ClassTypeResolver.java:216)
+	at net.sourceforge.pmd.lang.java.ast.ASTCompilationUnit.jjtAccept(ASTCompilationUnit.java:44)
+	at net.sourceforge.pmd.lang.java.typeresolution.TypeResolutionFacade.initializeWith(TypeResolutionFacade.java:21)
+	at net.sourceforge.pmd.lang.java.AbstractJavaHandler$5.start(AbstractJavaHandler.java:121)
+	at net.sourceforge.pmd.SourceCodeProcessor.usesTypeResolution(SourceCodeProcessor.java:178)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSource(SourceCodeProcessor.java:205)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:118)
+	... 10 more
+]]>
+</error>
+<error filename="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\transformations\HandkerchiefTransformation.java" msg="PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\transformations\HandkerchiefTransformation.java">
+<![CDATA[net.sourceforge.pmd.PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\transformations\HandkerchiefTransformation.java
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:128)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:100)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:62)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:85)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:29)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: java.lang.IllegalArgumentException: Unsupported class file major version 66
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:199)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:180)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:166)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:287)
+	at net.sourceforge.pmd.lang.java.typeresolution.PMDASMClassLoader.getImportedClasses(PMDASMClassLoader.java:118)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.populateClassName(ClassTypeResolver.java:1639)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.visit(ClassTypeResolver.java:216)
+	at net.sourceforge.pmd.lang.java.ast.ASTCompilationUnit.jjtAccept(ASTCompilationUnit.java:44)
+	at net.sourceforge.pmd.lang.java.typeresolution.TypeResolutionFacade.initializeWith(TypeResolutionFacade.java:21)
+	at net.sourceforge.pmd.lang.java.AbstractJavaHandler$5.start(AbstractJavaHandler.java:121)
+	at net.sourceforge.pmd.SourceCodeProcessor.usesTypeResolution(SourceCodeProcessor.java:178)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSource(SourceCodeProcessor.java:205)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:118)
+	... 10 more
+]]>
+</error>
+<error filename="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\transformations\FlowerTransformation.java" msg="PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\transformations\FlowerTransformation.java">
+<![CDATA[net.sourceforge.pmd.PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\transformations\FlowerTransformation.java
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:128)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:100)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:62)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:85)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:29)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: java.lang.IllegalArgumentException: Unsupported class file major version 66
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:199)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:180)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:166)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:287)
+	at net.sourceforge.pmd.lang.java.typeresolution.PMDASMClassLoader.getImportedClasses(PMDASMClassLoader.java:118)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.populateClassName(ClassTypeResolver.java:1639)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.visit(ClassTypeResolver.java:216)
+	at net.sourceforge.pmd.lang.java.ast.ASTCompilationUnit.jjtAccept(ASTCompilationUnit.java:44)
+	at net.sourceforge.pmd.lang.java.typeresolution.TypeResolutionFacade.initializeWith(TypeResolutionFacade.java:21)
+	at net.sourceforge.pmd.lang.java.AbstractJavaHandler$5.start(AbstractJavaHandler.java:121)
+	at net.sourceforge.pmd.SourceCodeProcessor.usesTypeResolution(SourceCodeProcessor.java:178)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSource(SourceCodeProcessor.java:205)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:118)
+	... 10 more
+]]>
+</error>
+<error filename="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\transformations\FisheyeTransformation.java" msg="PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\transformations\FisheyeTransformation.java">
+<![CDATA[net.sourceforge.pmd.PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\transformations\FisheyeTransformation.java
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:128)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:100)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:62)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:85)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:29)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: java.lang.IllegalArgumentException: Unsupported class file major version 66
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:199)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:180)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:166)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:287)
+	at net.sourceforge.pmd.lang.java.typeresolution.PMDASMClassLoader.getImportedClasses(PMDASMClassLoader.java:118)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.populateClassName(ClassTypeResolver.java:1639)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.visit(ClassTypeResolver.java:216)
+	at net.sourceforge.pmd.lang.java.ast.ASTCompilationUnit.jjtAccept(ASTCompilationUnit.java:44)
+	at net.sourceforge.pmd.lang.java.typeresolution.TypeResolutionFacade.initializeWith(TypeResolutionFacade.java:21)
+	at net.sourceforge.pmd.lang.java.AbstractJavaHandler$5.start(AbstractJavaHandler.java:121)
+	at net.sourceforge.pmd.SourceCodeProcessor.usesTypeResolution(SourceCodeProcessor.java:178)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSource(SourceCodeProcessor.java:205)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:118)
+	... 10 more
+]]>
+</error>
+<error filename="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\transformations\SwirlTransformation.java" msg="PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\transformations\SwirlTransformation.java">
+<![CDATA[net.sourceforge.pmd.PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\transformations\SwirlTransformation.java
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:128)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:100)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:62)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:85)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:29)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: java.lang.IllegalArgumentException: Unsupported class file major version 66
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:199)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:180)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:166)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:287)
+	at net.sourceforge.pmd.lang.java.typeresolution.PMDASMClassLoader.getImportedClasses(PMDASMClassLoader.java:118)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.populateClassName(ClassTypeResolver.java:1639)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.visit(ClassTypeResolver.java:216)
+	at net.sourceforge.pmd.lang.java.ast.ASTCompilationUnit.jjtAccept(ASTCompilationUnit.java:44)
+	at net.sourceforge.pmd.lang.java.typeresolution.TypeResolutionFacade.initializeWith(TypeResolutionFacade.java:21)
+	at net.sourceforge.pmd.lang.java.AbstractJavaHandler$5.start(AbstractJavaHandler.java:121)
+	at net.sourceforge.pmd.SourceCodeProcessor.usesTypeResolution(SourceCodeProcessor.java:178)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSource(SourceCodeProcessor.java:205)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:118)
+	... 10 more
+]]>
+</error>
+<error filename="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\transformations\StarburstTransformation.java" msg="PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\transformations\StarburstTransformation.java">
+<![CDATA[net.sourceforge.pmd.PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\transformations\StarburstTransformation.java
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:128)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:100)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:62)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:85)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:29)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: java.lang.IllegalArgumentException: Unsupported class file major version 66
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:199)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:180)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:166)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:287)
+	at net.sourceforge.pmd.lang.java.typeresolution.PMDASMClassLoader.getImportedClasses(PMDASMClassLoader.java:118)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.populateClassName(ClassTypeResolver.java:1639)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.visit(ClassTypeResolver.java:216)
+	at net.sourceforge.pmd.lang.java.ast.ASTCompilationUnit.jjtAccept(ASTCompilationUnit.java:44)
+	at net.sourceforge.pmd.lang.java.typeresolution.TypeResolutionFacade.initializeWith(TypeResolutionFacade.java:21)
+	at net.sourceforge.pmd.lang.java.AbstractJavaHandler$5.start(AbstractJavaHandler.java:121)
+	at net.sourceforge.pmd.SourceCodeProcessor.usesTypeResolution(SourceCodeProcessor.java:178)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSource(SourceCodeProcessor.java:205)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:118)
+	... 10 more
+]]>
+</error>
+<error filename="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\transformations\Transformation.java" msg="PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\transformations\Transformation.java">
+<![CDATA[net.sourceforge.pmd.PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\transformations\Transformation.java
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:128)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:100)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:62)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:85)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:29)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: java.lang.IllegalArgumentException: Unsupported class file major version 66
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:199)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:180)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:166)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:287)
+	at net.sourceforge.pmd.lang.java.typeresolution.PMDASMClassLoader.getImportedClasses(PMDASMClassLoader.java:118)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.populateClassName(ClassTypeResolver.java:1639)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.visit(ClassTypeResolver.java:216)
+	at net.sourceforge.pmd.lang.java.ast.ASTCompilationUnit.jjtAccept(ASTCompilationUnit.java:44)
+	at net.sourceforge.pmd.lang.java.typeresolution.TypeResolutionFacade.initializeWith(TypeResolutionFacade.java:21)
+	at net.sourceforge.pmd.lang.java.AbstractJavaHandler$5.start(AbstractJavaHandler.java:121)
+	at net.sourceforge.pmd.SourceCodeProcessor.usesTypeResolution(SourceCodeProcessor.java:178)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSource(SourceCodeProcessor.java:205)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:118)
+	... 10 more
+]]>
+</error>
+<error filename="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\transformations\SpiralTransformation.java" msg="PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\transformations\SpiralTransformation.java">
+<![CDATA[net.sourceforge.pmd.PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\transformations\SpiralTransformation.java
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:128)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:100)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:62)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:85)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:29)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: java.lang.IllegalArgumentException: Unsupported class file major version 66
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:199)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:180)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:166)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:287)
+	at net.sourceforge.pmd.lang.java.typeresolution.PMDASMClassLoader.getImportedClasses(PMDASMClassLoader.java:118)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.populateClassName(ClassTypeResolver.java:1639)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.visit(ClassTypeResolver.java:216)
+	at net.sourceforge.pmd.lang.java.ast.ASTCompilationUnit.jjtAccept(ASTCompilationUnit.java:44)
+	at net.sourceforge.pmd.lang.java.typeresolution.TypeResolutionFacade.initializeWith(TypeResolutionFacade.java:21)
+	at net.sourceforge.pmd.lang.java.AbstractJavaHandler$5.start(AbstractJavaHandler.java:121)
+	at net.sourceforge.pmd.SourceCodeProcessor.usesTypeResolution(SourceCodeProcessor.java:178)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSource(SourceCodeProcessor.java:205)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:118)
+	... 10 more
+]]>
+</error>
+<error filename="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\transformations\NonLinearTransformations.java" msg="PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\transformations\NonLinearTransformations.java">
+<![CDATA[net.sourceforge.pmd.PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\transformations\NonLinearTransformations.java
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:128)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:100)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:62)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:85)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:29)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: java.lang.IllegalArgumentException: Unsupported class file major version 66
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:199)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:180)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:166)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:287)
+	at net.sourceforge.pmd.lang.java.typeresolution.PMDASMClassLoader.getImportedClasses(PMDASMClassLoader.java:118)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.populateClassName(ClassTypeResolver.java:1639)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.visit(ClassTypeResolver.java:216)
+	at net.sourceforge.pmd.lang.java.ast.ASTCompilationUnit.jjtAccept(ASTCompilationUnit.java:44)
+	at net.sourceforge.pmd.lang.java.typeresolution.TypeResolutionFacade.initializeWith(TypeResolutionFacade.java:21)
+	at net.sourceforge.pmd.lang.java.AbstractJavaHandler$5.start(AbstractJavaHandler.java:121)
+	at net.sourceforge.pmd.SourceCodeProcessor.usesTypeResolution(SourceCodeProcessor.java:178)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSource(SourceCodeProcessor.java:205)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:118)
+	... 10 more
+]]>
+</error>
+<error filename="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\utils\ImageFormat.java" msg="PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\utils\ImageFormat.java">
+<![CDATA[net.sourceforge.pmd.PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\utils\ImageFormat.java
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:128)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:100)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:62)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:85)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:29)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: java.lang.IllegalArgumentException: Unsupported class file major version 66
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:199)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:180)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:166)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:287)
+	at net.sourceforge.pmd.lang.java.typeresolution.PMDASMClassLoader.getImportedClasses(PMDASMClassLoader.java:118)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.populateClassName(ClassTypeResolver.java:1639)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.visit(ClassTypeResolver.java:216)
+	at net.sourceforge.pmd.lang.java.ast.ASTCompilationUnit.jjtAccept(ASTCompilationUnit.java:44)
+	at net.sourceforge.pmd.lang.java.typeresolution.TypeResolutionFacade.initializeWith(TypeResolutionFacade.java:21)
+	at net.sourceforge.pmd.lang.java.AbstractJavaHandler$5.start(AbstractJavaHandler.java:121)
+	at net.sourceforge.pmd.SourceCodeProcessor.usesTypeResolution(SourceCodeProcessor.java:178)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSource(SourceCodeProcessor.java:205)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:118)
+	... 10 more
+]]>
+</error>
+<error filename="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\transformations\LinearTransformation.java" msg="PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\transformations\LinearTransformation.java">
+<![CDATA[net.sourceforge.pmd.PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\transformations\LinearTransformation.java
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:128)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:100)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:62)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:85)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:29)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: java.lang.IllegalArgumentException: Unsupported class file major version 66
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:199)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:180)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:166)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:287)
+	at net.sourceforge.pmd.lang.java.typeresolution.PMDASMClassLoader.getImportedClasses(PMDASMClassLoader.java:118)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.populateClassName(ClassTypeResolver.java:1639)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.visit(ClassTypeResolver.java:216)
+	at net.sourceforge.pmd.lang.java.ast.ASTCompilationUnit.jjtAccept(ASTCompilationUnit.java:44)
+	at net.sourceforge.pmd.lang.java.typeresolution.TypeResolutionFacade.initializeWith(TypeResolutionFacade.java:21)
+	at net.sourceforge.pmd.lang.java.AbstractJavaHandler$5.start(AbstractJavaHandler.java:121)
+	at net.sourceforge.pmd.SourceCodeProcessor.usesTypeResolution(SourceCodeProcessor.java:178)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSource(SourceCodeProcessor.java:205)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:118)
+	... 10 more
+]]>
+</error>
+<error filename="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\utils\PerformanceMeasurer.java" msg="PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\utils\PerformanceMeasurer.java">
+<![CDATA[net.sourceforge.pmd.PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\utils\PerformanceMeasurer.java
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:128)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:100)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:62)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:85)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:29)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: java.lang.IllegalArgumentException: Unsupported class file major version 66
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:199)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:180)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:166)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:287)
+	at net.sourceforge.pmd.lang.java.typeresolution.PMDASMClassLoader.getImportedClasses(PMDASMClassLoader.java:118)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.populateClassName(ClassTypeResolver.java:1639)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.visit(ClassTypeResolver.java:216)
+	at net.sourceforge.pmd.lang.java.ast.ASTCompilationUnit.jjtAccept(ASTCompilationUnit.java:44)
+	at net.sourceforge.pmd.lang.java.typeresolution.TypeResolutionFacade.initializeWith(TypeResolutionFacade.java:21)
+	at net.sourceforge.pmd.lang.java.AbstractJavaHandler$5.start(AbstractJavaHandler.java:121)
+	at net.sourceforge.pmd.SourceCodeProcessor.usesTypeResolution(SourceCodeProcessor.java:178)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSource(SourceCodeProcessor.java:205)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:118)
+	... 10 more
+]]>
+</error>
+<error filename="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\utils\ImageUtils.java" msg="PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\utils\ImageUtils.java">
+<![CDATA[net.sourceforge.pmd.PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\utils\ImageUtils.java
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:128)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:100)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:62)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:85)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:29)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: java.lang.IllegalArgumentException: Unsupported class file major version 66
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:199)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:180)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:166)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:287)
+	at net.sourceforge.pmd.lang.java.typeresolution.PMDASMClassLoader.getImportedClasses(PMDASMClassLoader.java:118)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.populateClassName(ClassTypeResolver.java:1639)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.visit(ClassTypeResolver.java:216)
+	at net.sourceforge.pmd.lang.java.ast.ASTCompilationUnit.jjtAccept(ASTCompilationUnit.java:44)
+	at net.sourceforge.pmd.lang.java.typeresolution.TypeResolutionFacade.initializeWith(TypeResolutionFacade.java:21)
+	at net.sourceforge.pmd.lang.java.AbstractJavaHandler$5.start(AbstractJavaHandler.java:121)
+	at net.sourceforge.pmd.SourceCodeProcessor.usesTypeResolution(SourceCodeProcessor.java:178)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSource(SourceCodeProcessor.java:205)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:118)
+	... 10 more
+]]>
+</error>
+<error filename="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\utils\PerformanceLogger.java" msg="PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\utils\PerformanceLogger.java">
+<![CDATA[net.sourceforge.pmd.PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\utils\PerformanceLogger.java
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:128)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:100)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:62)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:85)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:29)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: java.lang.IllegalArgumentException: Unsupported class file major version 66
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:199)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:180)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:166)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:287)
+	at net.sourceforge.pmd.lang.java.typeresolution.PMDASMClassLoader.getImportedClasses(PMDASMClassLoader.java:118)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.populateClassName(ClassTypeResolver.java:1639)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.visit(ClassTypeResolver.java:216)
+	at net.sourceforge.pmd.lang.java.ast.ASTCompilationUnit.jjtAccept(ASTCompilationUnit.java:44)
+	at net.sourceforge.pmd.lang.java.typeresolution.TypeResolutionFacade.initializeWith(TypeResolutionFacade.java:21)
+	at net.sourceforge.pmd.lang.java.AbstractJavaHandler$5.start(AbstractJavaHandler.java:121)
+	at net.sourceforge.pmd.SourceCodeProcessor.usesTypeResolution(SourceCodeProcessor.java:178)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSource(SourceCodeProcessor.java:205)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:118)
+	... 10 more
+]]>
+</error>
+<error filename="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\utils\PerformanceTesterLauncher.java" msg="PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\utils\PerformanceTesterLauncher.java">
+<![CDATA[net.sourceforge.pmd.PMDException: Error while processing C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\utils\PerformanceTesterLauncher.java
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:128)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:100)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:62)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:85)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:29)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: java.lang.IllegalArgumentException: Unsupported class file major version 66
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:199)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:180)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:166)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:287)
+	at net.sourceforge.pmd.lang.java.typeresolution.PMDASMClassLoader.getImportedClasses(PMDASMClassLoader.java:118)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.populateClassName(ClassTypeResolver.java:1639)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.visit(ClassTypeResolver.java:216)
+	at net.sourceforge.pmd.lang.java.ast.ASTCompilationUnit.jjtAccept(ASTCompilationUnit.java:44)
+	at net.sourceforge.pmd.lang.java.typeresolution.TypeResolutionFacade.initializeWith(TypeResolutionFacade.java:21)
+	at net.sourceforge.pmd.lang.java.AbstractJavaHandler$5.start(AbstractJavaHandler.java:121)
+	at net.sourceforge.pmd.SourceCodeProcessor.usesTypeResolution(SourceCodeProcessor.java:178)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSource(SourceCodeProcessor.java:205)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:118)
+	... 10 more
+]]>
+</error>
+</pmd>

@@ -13,5 +13,6 @@ public class FisheyeTransformation implements Transformation {
         double newY = 2 * point.x() / (radius + 1);
 
         return new Point(newX, newY);
+
     }
 }

@@ -20,8 +20,8 @@ import org.apache.logging.log4j.Logger;
 /**
  * Класс для многопоточного рендеринга фрактальных изображений.
  * <p>
- * Этот класс реализует методы для рендеринга фрактальных изображений
- * с использованием нескольких потоков для повышения производительности.
+ * Этот класс реализует методы для рендеринга фрактальных изображений с использованием нескольких потоков для повышения
+ * производительности.
  * </p>
  *
  * @since 1.0
@@ -35,8 +35,10 @@ public class MultiRenderer extends AbstractRenderer {
     /**
      * Конструктор для создания многопоточного рендерера.
      *
-     * @param threadCount количество потоков
-     * @param symmetry симметрия
+     * @param threadCount
+     *            количество потоков
+     * @param symmetry
+     *            симметрия
      */
     public MultiRenderer(int threadCount, int symmetry) {
         this.threadCount = threadCount;
@@ -46,18 +48,26 @@ public class MultiRenderer extends AbstractRenderer {
     /**
      * Рендерит фрактальное изображение на холсте.
      *
-     * @param canvas холст для рендеринга
-     * @param world прямоугольная область мира
-     * @param affine список цветовых преобразований
-     * @param variations список вариаций преобразований
-     * @param samples количество образцов
-     * @param iterPerSample количество итераций на образец
-     * @param seed начальное значение для генератора случайных чисел
+     * @param canvas
+     *            холст для рендеринга
+     * @param world
+     *            прямоугольная область мира
+     * @param affine
+     *            список цветовых преобразований
+     * @param variations
+     *            список вариаций преобразований
+     * @param samples
+     *            количество образцов
+     * @param iterPerSample
+     *            количество итераций на образец
+     * @param seed
+     *            начальное значение для генератора случайных чисел
+     *
      * @return сгенерированное фрактальное изображение
      */
     @Override
     public IFractalImage render(IFractalImage canvas, Rectangular world, List<ColorTransformation> affine,
-        List<Transformation> variations, int samples, int iterPerSample, int seed) {
+            List<Transformation> variations, int samples, int iterPerSample, int seed) {
         List<Callable<IFractalImage>> tasks = new ArrayList<>();
         int samplesPerThread = samples / threadCount;
         int remainingSamples = samples % threadCount;
@@ -65,9 +75,8 @@ public class MultiRenderer extends AbstractRenderer {
         try (ExecutorService executorService = Executors.newFixedThreadPool(threadCount)) {
             for (int i = 0; i < threadCount; i++) {
                 int finalI = i;
-                tasks.add(() -> renderPart(FractalImage.create(canvas.getWidth(), canvas.getHeight()),
-                    world, affine, variations, samplesPerThread + ((finalI < remainingSamples) ? 1 : 0),
-                    iterPerSample));
+                tasks.add(() -> renderPart(FractalImage.create(canvas.getWidth(), canvas.getHeight()), world, affine,
+                        variations, samplesPerThread + ((finalI < remainingSamples) ? 1 : 0), iterPerSample));
 
             }
 
@@ -83,7 +92,7 @@ public class MultiRenderer extends AbstractRenderer {
     }
 
     private IFractalImage renderPart(IFractalImage canvas, Rectangular world, List<ColorTransformation> affine,
-        List<Transformation> variations, int samples, int iterPerSample) {
+            List<Transformation> variations, int samples, int iterPerSample) {
         for (int i = 0; i < samples; i++) {
             Point pw = randomPoint(world);
             for (int step = 0; step < iterPerSample; step++) {

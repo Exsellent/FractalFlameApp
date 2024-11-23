@@ -16,7 +16,8 @@ public interface ImageProcessor {
     /**
      * Обрабатывает фрактальное изображение.
      *
-     * @param image фрактальное изображение для обработки
+     * @param image
+     *            фрактальное изображение для обработки
      */
     void process(IFractalImage image);
 }

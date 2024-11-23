@@ -13,6 +13,6 @@ public class DiskTransformation implements Transformation {
         double newY = Math.cos(theta) * Math.sin(Math.PI * radius);
         double newZ = Math.cos(Math.PI * radius); // Добавляем объем за счет косинуса
 
-        return new Point(newX, newY, newZ);
+        return new Point(newX, newY);
     }
 }

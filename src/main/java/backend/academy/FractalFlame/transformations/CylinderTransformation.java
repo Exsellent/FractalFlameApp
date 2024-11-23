@@ -9,6 +9,6 @@ public class CylinderTransformation implements Transformation {
         double newY = point.y();
         double newZ = Math.cos(point.x());
 
-        return new Point(newX, newY, newZ);
+        return new Point(newX, newY);
     }
 }

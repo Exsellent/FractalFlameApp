@@ -13,8 +13,8 @@ import java.util.concurrent.ThreadLocalRandom;
 /**
  * Класс для параллельного рендеринга фрактальных изображений.
  * <p>
- * Этот класс реализует методы для рендеринга фрактальных изображений
- * с использованием нескольких потоков для повышения производительности.
+ * Этот класс реализует методы для рендеринга фрактальных изображений с использованием нескольких потоков для повышения
+ * производительности.
  * </p>
  *
  * @since 1.0
@@ -27,8 +27,10 @@ public class ParallelRenderer extends AbstractRenderer {
     /**
      * Конструктор для создания параллельного рендерера.
      *
-     * @param threadCount количество потоков
-     * @param symmetry    симметрия
+     * @param threadCount
+     *            количество потоков
+     * @param symmetry
+     *            симметрия
      */
     public ParallelRenderer(int threadCount, int symmetry) {
         this.threadCount = threadCount;
@@ -38,24 +40,26 @@ public class ParallelRenderer extends AbstractRenderer {
     /**
      * Рендерит фрактальное изображение на холсте.
      *
-     * @param canvas        холст для рендеринга
-     * @param world         прямоугольная область мира
-     * @param affine        список цветовых преобразований
-     * @param variations    список вариаций преобразований
-     * @param samples       количество образцов
-     * @param iterPerSample количество итераций на образец
-     * @param seed          начальное значение для генератора случайных чисел
+     * @param canvas
+     *            холст для рендеринга
+     * @param world
+     *            прямоугольная область мира
+     * @param affine
+     *            список цветовых преобразований
+     * @param variations
+     *            список вариаций преобразований
+     * @param samples
+     *            количество образцов
+     * @param iterPerSample
+     *            количество итераций на образец
+     * @param seed
+     *            начальное значение для генератора случайных чисел
+     *
      * @return сгенерированное фрактальное изображение
      */
-    @Override public IFractalImage render(
-        IFractalImage canvas,
-        Rectangular world,
-        List<ColorTransformation> affine,
-        List<Transformation> variations,
-        int samples,
-        int iterPerSample,
-        int seed
-    ) {
+    @Override
+    public IFractalImage render(IFractalImage canvas, Rectangular world, List<ColorTransformation> affine,
+            List<Transformation> variations, int samples, int iterPerSample, int seed) {
         try (ExecutorService executor = Executors.newFixedThreadPool(threadCount)) {
             for (int i = 0; i < samples; i++) {
                 executor.submit(() -> renderSample(canvas, world, affine, variations, iterPerSample));
@@ -64,13 +68,8 @@ public class ParallelRenderer extends AbstractRenderer {
         return canvas;
     }
 
-    private void renderSample(
-        IFractalImage canvas,
-        Rectangular world,
-        List<ColorTransformation> affine,
-        List<Transformation> variations,
-        int iterPerSample
-    ) {
+    private void renderSample(IFractalImage canvas, Rectangular world, List<ColorTransformation> affine,
+            List<Transformation> variations, int iterPerSample) {
         Point pw = randomPoint(world);
 
         for (int step = 0; step < iterPerSample; ++step) {

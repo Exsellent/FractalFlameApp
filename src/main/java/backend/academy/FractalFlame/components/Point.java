@@ -1,65 +1,38 @@
 package backend.academy.FractalFlame.components;
 
 /**
- * Представляет точку в трехмерном пространстве с координатами x, y и z.
+ * Represents a point in a two-dimensional Cartesian coordinate system. This class is immutable and uses the
+ * {@code record} feature of Java.
  */
-public class Point {
-    private final double x;
-    private final double y;
-    private final double z;
+public record Point(double x, double y) {
 
     /**
-     * Создает точку в двухмерном пространстве с координатами x и y. Координата z по умолчанию равна 0.0.
+     * Compares this point to the specified object for equality.
      *
-     * @param x
-     *            координата x
-     * @param y
-     *            координата y
+     * @param o
+     *            the object to compare this point with
+     *
+     * @return {@code true} if the specified object is equal to this point; {@code false} otherwise
      */
-    public Point(double x, double y) {
-        this(x, y, 0.0);
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
+        Point point = (Point) o;
+        return Double.compare(point.x, x) == 0 && Double.compare(point.y, y) == 0;
     }
 
     /**
-     * Создает точку в трехмерном пространстве с координатами x, y и z.
+     * Returns the hash code for this point.
      *
-     * @param x
-     *            координата x
-     * @param y
-     *            координата y
-     * @param z
-     *            координата z
+     * @return the hash code for this point
      */
-    public Point(double x, double y, double z) {
-        this.x = x;
-        this.y = y;
-        this.z = z;
-    }
-
-    /**
-     * Возвращает координату x.
-     *
-     * @return координата x
-     */
-    public double x() {
-        return x;
-    }
-
-    /**
-     * Возвращает координату y.
-     *
-     * @return координата y
-     */
-    public double y() {
-        return y;
-    }
-
-    /**
-     * Возвращает координату z.
-     *
-     * @return координата z
-     */
-    public double z() {
-        return z;
+    @Override
+    public int hashCode() {
+        return java.util.Objects.hash(x, y);
     }
 }

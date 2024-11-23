@@ -11,8 +11,8 @@ import java.util.concurrent.ThreadLocalRandom;
 /**
  * Абстрактный класс для рендеринга фрактальных изображений.
  * <p>
- * Этот класс предоставляет базовые методы для рендеринга, такие как вращение точек,
- * смешивание цветов и обновление пикселей.
+ * Этот класс предоставляет базовые методы для рендеринга, такие как вращение точек, смешивание цветов и обновление
+ * пикселей.
  * </p>
  *
  * @since 1.0
@@ -22,8 +22,11 @@ public abstract class AbstractRenderer implements Renderer {
     /**
      * Вращает точку на заданный угол.
      *
-     * @param point точка для вращения
-     * @param theta угол вращения в радианах
+     * @param point
+     *            точка для вращения
+     * @param theta
+     *            угол вращения в радианах
+     *
      * @return новая точка после вращения
      */
     protected Point rotate(Point point, double theta) {
@@ -39,8 +42,11 @@ public abstract class AbstractRenderer implements Renderer {
     /**
      * Смешивает два цвета.
      *
-     * @param first  первый цвет
-     * @param second второй цвет
+     * @param first
+     *            первый цвет
+     * @param second
+     *            второй цвет
+     *
      * @return новый цвет, полученный путем смешивания первых двух
      */
     protected Color mixColor(Color first, Color second) {
@@ -50,10 +56,15 @@ public abstract class AbstractRenderer implements Renderer {
     /**
      * Вычисляет координату расширения.
      *
-     * @param size  размер
-     * @param min   минимальное значение
-     * @param max   максимальное значение
-     * @param point точка
+     * @param size
+     *            размер
+     * @param min
+     *            минимальное значение
+     * @param max
+     *            максимальное значение
+     * @param point
+     *            точка
+     *
      * @return координата расширения
      */
     protected int extension(int size, double min, double max, double point) {
@@ -63,10 +74,14 @@ public abstract class AbstractRenderer implements Renderer {
     /**
      * Обновляет пиксель на холсте.
      *
-     * @param canvas              холст
-     * @param colorTransformation цветовое преобразование
-     * @param x                   координата x
-     * @param y                   координата y
+     * @param canvas
+     *            холст
+     * @param colorTransformation
+     *            цветовое преобразование
+     * @param x
+     *            координата x
+     * @param y
+     *            координата y
      */
     protected void updatePixel(IFractalImage canvas, ColorTransformation colorTransformation, int x, int y) {
         Pixel oldPixel = canvas.pixel(x, y);
@@ -78,10 +93,14 @@ public abstract class AbstractRenderer implements Renderer {
     /**
      * Применяет изменения к холсту.
      *
-     * @param canvas       холст
-     * @param world        прямоугольная область
-     * @param pw           точка
-     * @param chosenAffine выбранное аффинное преобразование
+     * @param canvas
+     *            холст
+     * @param world
+     *            прямоугольная область
+     * @param pw
+     *            точка
+     * @param chosenAffine
+     *            выбранное аффинное преобразование
      */
     protected void applyChanges(IFractalImage canvas, Rectangular world, Point pw, ColorTransformation chosenAffine) {
         if (world.contains(pw)) {
@@ -97,7 +116,9 @@ public abstract class AbstractRenderer implements Renderer {
     /**
      * Генерирует случайную точку в пределах прямоугольной области.
      *
-     * @param world прямоугольная область
+     * @param world
+     *            прямоугольная область
+     *
      * @return случайная точка
      */
     protected Point randomPoint(Rectangular world) {

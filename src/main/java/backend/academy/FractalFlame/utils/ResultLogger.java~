@@ -1,0 +1,4 @@
+package backend.academy.FractalFlame.utils;
+
+public class ResultLogger {
+}

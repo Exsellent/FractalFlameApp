@@ -1,34 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <checkstyle version="10.17.0">
-<file name="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\components\AffineTransformation.java">
-</file>
-<file name="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\components\Color.java">
-</file>
-<file name="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\components\FractalImage.java">
-</file>
-<file name="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\components\IFractalImage.java">
-</file>
-<file name="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\components\Pixel.java">
-</file>
-<file name="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\components\Point.java">
-</file>
-<file name="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\components\Rectangular.java">
-</file>
-<file name="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\components\SyncFractalImage.java">
-</file>
 <file name="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\config\Config.java">
 <error line="7" column="1" severity="warning" message="Private ctor in non-final class. Inspect the code and make sure its intended." source="com.puppycrawl.tools.checkstyle.checks.design.FinalClassCheck"/>
 </file>
-<file name="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\transformations\ComplexDragonTransformation.java">
+<file name="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\FractalFlameApp.java">
+<error line="35" column="1" severity="warning" message="Private ctor in non-final class. Inspect the code and make sure its intended." source="com.puppycrawl.tools.checkstyle.checks.design.FinalClassCheck"/>
 </file>
-<file name="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\transformations\LinearTransformation.java">
+<file name="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\Launcher.java">
+<error line="35" column="1" severity="warning" message="Private ctor in non-final class. Inspect the code and make sure its intended." source="com.puppycrawl.tools.checkstyle.checks.design.FinalClassCheck"/>
 </file>
-<file name="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\transformations\Transformation.java">
+<file name="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\Main.java">
+<error line="6" column="1" severity="warning" message="Private ctor in non-final class. Inspect the code and make sure its intended." source="com.puppycrawl.tools.checkstyle.checks.design.FinalClassCheck"/>
 </file>
-<file name="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\utils\ImageFormat.java">
-</file>
-<file name="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\utils\ImageUtils.java">
-</file>
-<file name="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\Main.java">
+<file name="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\renderers\RenderConfig.java">
+<error line="11" column="1" severity="warning" message="Private ctor in non-final class. Inspect the code and make sure its intended." source="com.puppycrawl.tools.checkstyle.checks.design.FinalClassCheck"/>
 </file>
 </checkstyle>
