@@ -1,4 +1,4 @@
-#Sat Nov 23 10:49:27 UTC 2024
+#Sat Nov 23 22:01:16 UTC 2024
 C\:\\Java\\IntelIDEA\\backend_academy_2024_project_4-java-Exsellent\\src\\main\\java\\backend\\academy\\FractalFlame\\components\\AffineTransformation.java=1732202310054
 C\:\\Java\\IntelIDEA\\backend_academy_2024_project_4-java-Exsellent\\src\\main\\java\\backend\\academy\\FractalFlame\\components\\Color.java=1732202310071
 C\:\\Java\\IntelIDEA\\backend_academy_2024_project_4-java-Exsellent\\src\\main\\java\\backend\\academy\\FractalFlame\\components\\FractalImage.java=1732202310095
@@ -7,7 +7,7 @@ C\:\\Java\\IntelIDEA\\backend_academy_2024_project_4-java-Exsellent\\src\\main\\
 C\:\\Java\\IntelIDEA\\backend_academy_2024_project_4-java-Exsellent\\src\\main\\java\\backend\\academy\\FractalFlame\\components\\Point.java=1732319311767
 C\:\\Java\\IntelIDEA\\backend_academy_2024_project_4-java-Exsellent\\src\\main\\java\\backend\\academy\\FractalFlame\\components\\Rectangular.java=1732202310126
 C\:\\Java\\IntelIDEA\\backend_academy_2024_project_4-java-Exsellent\\src\\main\\java\\backend\\academy\\FractalFlame\\components\\SyncFractalImage.java=1732202310143
-C\:\\Java\\IntelIDEA\\backend_academy_2024_project_4-java-Exsellent\\src\\main\\java\\backend\\academy\\FractalFlame\\config\\ConfigLoader.java=1732272996089
+C\:\\Java\\IntelIDEA\\backend_academy_2024_project_4-java-Exsellent\\src\\main\\java\\backend\\academy\\FractalFlame\\config\\ConfigLoader.java=1732399264255
 C\:\\Java\\IntelIDEA\\backend_academy_2024_project_4-java-Exsellent\\src\\main\\java\\backend\\academy\\FractalFlame\\processors\\GammaCorrectionProcessor.java=1732095191540
 C\:\\Java\\IntelIDEA\\backend_academy_2024_project_4-java-Exsellent\\src\\main\\java\\backend\\academy\\FractalFlame\\processors\\ImageProcessor.java=1732207721982
 C\:\\Java\\IntelIDEA\\backend_academy_2024_project_4-java-Exsellent\\src\\main\\java\\backend\\academy\\FractalFlame\\processors\\LogarithmicGammaCorrectionProcessor.java=1732095191553
@@ -38,7 +38,7 @@ C\:\\Java\\IntelIDEA\\backend_academy_2024_project_4-java-Exsellent\\src\\main\\
 C\:\\Java\\IntelIDEA\\backend_academy_2024_project_4-java-Exsellent\\src\\main\\java\\backend\\academy\\FractalFlame\\transformations\\Transformation.java=1732202727879
 C\:\\Java\\IntelIDEA\\backend_academy_2024_project_4-java-Exsellent\\src\\main\\java\\backend\\academy\\FractalFlame\\utils\\ImageFormat.java=1732202310241
 C\:\\Java\\IntelIDEA\\backend_academy_2024_project_4-java-Exsellent\\src\\main\\java\\backend\\academy\\FractalFlame\\utils\\ImageUtils.java=1732207722265
-C\:\\Java\\IntelIDEA\\backend_academy_2024_project_4-java-Exsellent\\src\\main\\java\\backend\\academy\\FractalFlame\\utils\\PerformanceLogger.java=1732321111041
+C\:\\Java\\IntelIDEA\\backend_academy_2024_project_4-java-Exsellent\\src\\main\\java\\backend\\academy\\FractalFlame\\utils\\PerformanceLogger.java=1732359065877
 C\:\\Java\\IntelIDEA\\backend_academy_2024_project_4-java-Exsellent\\src\\main\\java\\backend\\academy\\FractalFlame\\utils\\PerformanceMeasurer.java=1732272996311
 C\:\\Java\\IntelIDEA\\backend_academy_2024_project_4-java-Exsellent\\src\\main\\java\\backend\\academy\\FractalFlame\\utils\\PerformanceTesterLauncher.java=1732273096348
 C\:\\Java\\IntelIDEA\\backend_academy_2024_project_4-java-Exsellent\\src\\main\\resources\\config.properties=1732226666909

@@ -16,9 +16,13 @@ public final class ConfigLoader {
     /**
      * Загружает конфигурацию из указанного файла.
      *
-     * @param filePath путь к файлу конфигурации
+     * @param filePath
+     *            путь к файлу конфигурации
+     *
      * @return объект {@link Config}
-     * @throws IOException если произошла ошибка чтения файла
+     *
+     * @throws IOException
+     *             если произошла ошибка чтения файла
      */
     public static Config loadConfig(String filePath) throws IOException {
         Properties properties = new Properties();
