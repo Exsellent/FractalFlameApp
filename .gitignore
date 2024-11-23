@@ -27,4 +27,7 @@
  #/src/main/java/backend/academy/Draft/
  #
  ## Игнорировать временные файлы с суффиксом ~
- #*~
+ #*.~
+ *~
+ *.bak
+ *.tmp
