@@ -26,11 +26,12 @@
  #
  #/src/main/java/backend/academy/Draft/
  #
- # Игнорирование временных файлов
+
+ # Ignoring temporary files
  *~
  *.bak
  *.tmp
  *.swp
  *.DS_Store
  Thumbs.db
-  out/
+ out/

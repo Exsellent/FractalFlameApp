@@ -1,12 +1,12 @@
 package backend.academy.FractalFlame.components;
 
 /**
- * Представляет пиксель с цветом и количеством попаданий.
+ * Represents a pixel with color and number of hits.
  *
  * @param color
- *            цвет пикселя
+ *      Pixel color
  * @param hitCount
- *            количество попаданий в пиксель
+ *      number of hits per pixel
  */
 public record Pixel(Color color, int hitCount) {
 }

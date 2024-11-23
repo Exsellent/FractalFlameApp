@@ -151,7 +151,7 @@ public class Config {
         private AffineTransformation[] presetAffineTransformations = null;
         private Transformation[] nonlinearTransformations = null;
 
-        // Методы для задания значений
+        // Methods for setting values
         public Builder setWidth(int width) {
             if (width <= 0) {
                 throw new IllegalArgumentException("Width must be positive.");

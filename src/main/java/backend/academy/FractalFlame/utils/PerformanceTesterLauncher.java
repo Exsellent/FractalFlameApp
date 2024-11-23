@@ -15,9 +15,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Класс запуска тестов производительности рендеров.
+ * A class for running performance tests of renderers.
  *
- * Используется для сравнения однопоточной и многопоточной реализации.
+ * Is used to compare single-threaded and multi-threaded implementations.
  */
 public final class PerformanceTesterLauncher {
 
@@ -31,10 +31,10 @@ public final class PerformanceTesterLauncher {
     }
 
     /**
-     * Точка входа для запуска тестов производительности.
+     * Entry point for running performance tests.
      *
      * @param args
-     *            аргументы командной строки (не используются)
+     *      Command line arguments (not used)
      */
     @SuppressWarnings("UncommentedMain")
     public static void main(String[] args) {
@@ -44,9 +44,9 @@ public final class PerformanceTesterLauncher {
     }
 
     /**
-     * Создаёт конфигурацию рендера.
+     * Creates the render configuration.
      *
-     * @return конфигурация {@link RenderConfig}
+     * @return configuration {@link RenderConfig}
      */
     private static RenderConfig createRenderConfig() {
         final int width = 1920;
@@ -68,9 +68,9 @@ public final class PerformanceTesterLauncher {
     }
 
     /**
-     * Создаёт конфигурацию с предопределёнными аффинными преобразованиями.
+     * Creates a configuration with predefined affine transformations.
      *
-     * @return конфигурация {@link Config}
+     * @return configuration {@link Config}
      */
     private static Config createDefaultConfig() {
         return new Config.Builder().setPresetAffineTransformations(new AffineTransformation[] {
@@ -84,12 +84,12 @@ public final class PerformanceTesterLauncher {
     }
 
     /**
-     * Создаёт список аффинных преобразований на основе конфигурации.
+     * Creates a list of affine transformations based on the configuration.
      *
      * @param config
-     *            конфигурация {@link Config}
+     *      configuration {@link Config}
      *
-     * @return список преобразований {@link ColorTransformation}
+     * @return list of transformations {@link ColorTransformation}
      */
     private static List<ColorTransformation> createAffineTransformations(Config config) {
         List<ColorTransformation> affine = new ArrayList<>();
@@ -103,9 +103,9 @@ public final class PerformanceTesterLauncher {
     }
 
     /**
-     * Создаёт список нелинейных преобразований.
+     * Creates a list of non-linear transformations.
      *
-     * @return список преобразований {@link Transformation}
+     * @return list of transformations {@link Transformation}
      */
     private static List<Transformation> createVariations() {
         List<Transformation> variations = new ArrayList<>();

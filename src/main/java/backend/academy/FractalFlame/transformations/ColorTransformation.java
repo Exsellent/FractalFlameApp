@@ -3,15 +3,15 @@ package backend.academy.FractalFlame.transformations;
 import backend.academy.FractalFlame.components.Color;
 
 /**
- * Запись для представления цветового преобразования.
+ * Entry to represent the color conversion.
  * <p>
- * Эта запись содержит аффинное преобразование и цвет, которые используются для рендеринга фрактальных изображений.
+ * This entry contains affine transformation and color, which are used for rendering fractal images.
  * </p>
  *
  * @param transformation
- *            аффинное преобразование
+ * affine transformation
  * @param color
- *            цвет
+ * color
  *
  * @since 1.0
  */

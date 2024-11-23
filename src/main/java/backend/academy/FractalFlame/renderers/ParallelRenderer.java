@@ -11,13 +11,13 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.ThreadLocalRandom;
 
 /**
- * Класс для параллельного рендеринга фрактальных изображений.
+ * Класс для многопоточного рендеринга фрактальных изображений.
  * <p>
- * Этот класс реализует методы для рендеринга фрактальных изображений с использованием нескольких потоков для повышения
- * производительности.
+ * Этот класс реализует методы рендеринга фрактальных изображений с использованием нескольких потоков для повышения производительности
+ *.
  * </p>
  *
- * @since 1.0
+ * @начиная с версии 1.0
  */
 public class ParallelRenderer extends AbstractRenderer {
 
@@ -25,12 +25,12 @@ public class ParallelRenderer extends AbstractRenderer {
     private final int threadCount;
 
     /**
-     * Конструктор для создания параллельного рендерера.
+     * Constructor for creating a parallel renderer.
      *
      * @param threadCount
-     *            количество потоков
+     *      number of streams
      * @param symmetry
-     *            симметрия
+     *      symmetry
      */
     public ParallelRenderer(int threadCount, int symmetry) {
         this.threadCount = threadCount;
@@ -38,24 +38,24 @@ public class ParallelRenderer extends AbstractRenderer {
     }
 
     /**
-     * Рендерит фрактальное изображение на холсте.
+     * Renders a fractal image on canvas.
      *
      * @param canvas
-     *            холст для рендеринга
+     *      canvas for rendering
      * @param world
-     *            прямоугольная область мира
+     *      rectangular area of the world
      * @param affine
-     *            список цветовых преобразований
+     *      List of color transformations
      * @param variations
-     *            список вариаций преобразований
+     *      List of transformation variations
      * @param samples
-     *            количество образцов
+     *      number of samples
      * @param iterPerSample
-     *            количество итераций на образец
+     *      number of iterations per sample
      * @param seed
-     *            начальное значение для генератора случайных чисел
+     *      the initial value for the random number generator
      *
-     * @return сгенерированное фрактальное изображение
+     * @return generated fractal image
      */
     @Override
     public IFractalImage render(IFractalImage canvas, Rectangular world, List<ColorTransformation> affine,

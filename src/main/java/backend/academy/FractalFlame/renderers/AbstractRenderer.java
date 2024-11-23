@@ -9,10 +9,10 @@ import backend.academy.FractalFlame.transformations.ColorTransformation;
 import java.util.concurrent.ThreadLocalRandom;
 
 /**
- * Абстрактный класс для рендеринга фрактальных изображений.
+ * Abstract class for rendering fractal images.
  * <p>
- * Этот класс предоставляет базовые методы для рендеринга, такие как вращение точек, смешивание цветов и обновление
- * пикселей.
+ * This class provides basic methods for rendering, such as rotating points, mixing colors, and updating
+ * pixels.
  * </p>
  *
  * @since 1.0
@@ -20,14 +20,14 @@ import java.util.concurrent.ThreadLocalRandom;
 public abstract class AbstractRenderer implements Renderer {
 
     /**
-     * Вращает точку на заданный угол.
+     * Rotates the point by the specified angle.
      *
      * @param point
-     *            точка для вращения
+     *      point for rotation
      * @param theta
-     *            угол вращения в радианах
+     *      angle of rotation in radians
      *
-     * @return новая точка после вращения
+     * @return new point after rotation
      */
     protected Point rotate(Point point, double theta) {
         double cosTheta = Math.cos(theta);
@@ -40,48 +40,48 @@ public abstract class AbstractRenderer implements Renderer {
     }
 
     /**
-     * Смешивает два цвета.
+     * Mixes two colors.
      *
      * @param first
-     *            первый цвет
+     *      first color
      * @param second
-     *            второй цвет
+     *      the second color
      *
-     * @return новый цвет, полученный путем смешивания первых двух
+     * @return a new color obtained by mixing the first two
      */
     protected Color mixColor(Color first, Color second) {
         return new Color((first.r() + second.r()) / 2, (first.g() + second.g()) / 2, (first.b() + second.b()) / 2);
     }
 
     /**
-     * Вычисляет координату расширения.
+     * Calculates the extension coordinate.
      *
      * @param size
-     *            размер
+     *      Size
      * @param min
-     *            минимальное значение
+     *      minimum value
      * @param max
-     *            максимальное значение
+     *      maximum value
      * @param point
-     *            точка
+     *      point
      *
-     * @return координата расширения
+     * @return extension coordinate
      */
     protected int extension(int size, double min, double max, double point) {
         return size - (int) Math.ceil((max - point) / (max - min) * size);
     }
 
     /**
-     * Обновляет пиксель на холсте.
+     * Updated Pixel on Holste.
      *
      * @param canvas
-     *            холст
+     *      Holst
      * @param colorTransformation
-     *            цветовое преобразование
+     *      color transformation
      * @param x
-     *            координата x
+     *      coordinate
      * @param y
-     *            координата y
+     *      coordinate
      */
     protected void updatePixel(IFractalImage canvas, ColorTransformation colorTransformation, int x, int y) {
         Pixel oldPixel = canvas.pixel(x, y);
@@ -91,16 +91,16 @@ public abstract class AbstractRenderer implements Renderer {
     }
 
     /**
-     * Применяет изменения к холсту.
+     * Applies changes to the canvas.
      *
      * @param canvas
-     *            холст
+     *      canvas
      * @param world
-     *            прямоугольная область
+     *      rectangular area
      * @param pw
-     *            точка
+     *      point
      * @param chosenAffine
-     *            выбранное аффинное преобразование
+     *      selected affine transformation
      */
     protected void applyChanges(IFractalImage canvas, Rectangular world, Point pw, ColorTransformation chosenAffine) {
         if (world.contains(pw)) {
@@ -114,12 +114,12 @@ public abstract class AbstractRenderer implements Renderer {
     }
 
     /**
-     * Генерирует случайную точку в пределах прямоугольной области.
+     * Generates a random point within a rectangular area.
      *
      * @param world
-     *            прямоугольная область
+     *      rectangular area
      *
-     * @return случайная точка
+     * @return random point
      */
     protected Point randomPoint(Rectangular world) {
         double x = world.x() + (ThreadLocalRandom.current().nextDouble() * world.width());

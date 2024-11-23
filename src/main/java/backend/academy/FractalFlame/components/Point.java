@@ -1,18 +1,18 @@
 package backend.academy.FractalFlame.components;
 
 /**
- * Представляет точку в двумерной декартовой системе координат. Этот класс неизменяем и использует функцию
- * {@code record} в Java.
+ * Represents a point in a two-dimensional Cartesian coordinate system. This class is immutable and uses a function
+ * {@code record} in Java.
  */
 public record Point(double x, double y) {
 
     /**
-     * Сравнивает эту точку с указанным объектом на равенство.
+     * Compares this point with the specified object for equality.
      *
      * @param o
-     *            объект для сравнения с этой точкой
+     *      object to compare with this point
      *
-     * @return {@code true}, если указанный объект равен этой точке; {@code false} в противном случае
+     * @return {@code true} if the specified object is equal to this point; {@code false} otherwise
      */
     @Override
     public boolean equals(Object o) {
@@ -27,9 +27,9 @@ public record Point(double x, double y) {
     }
 
     /**
-     * Возвращает хэш-код для этой точки.
+     * Returns the hash code for this point.
      *
-     * @return хэш-код для этой точки
+     * @return hash code for this point
      */
     @Override
     public int hashCode() {

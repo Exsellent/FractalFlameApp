@@ -25,7 +25,7 @@ public class LogarithmicGammaCorrectionProcessorTest {
 
         Pixel processedPixel = image.pixel(0, 0);
 
-        // Проверяем каждый цветовой канал
+        // Check each color channel
         assertEquals(expectedRed, processedPixel.color().r(), "Red channel should match expected value");
         assertEquals(expectedGreen, processedPixel.color().g(), "Green channel should match expected value");
         assertEquals(expectedBlue, processedPixel.color().b(), "Blue channel should match expected value");

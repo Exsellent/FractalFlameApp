@@ -8,9 +8,7 @@ import java.nio.file.Path;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-/**
- * Класс для логирования результатов производительности в файл.
- */
+
 public final class PerformanceLogger {
 
     private static final Logger LOGGER = LogManager.getLogger(PerformanceLogger.class);
@@ -25,35 +23,34 @@ public final class PerformanceLogger {
     }
 
     /**
-     * Логирует результаты производительности в файл.
+     * Logs the performance results to a file.
      *
      * @param durationSingle
-     *            Время выполнения однопоточной реализации (в наносекундах)
+     *      Execution time of a single-threaded implementation (in nanoseconds)
      * @param durationParallel
-     *            Время выполнения многопоточной реализации (в наносекундах)
+     *      Execution time of multithreaded implementation (in nanoseconds)
      * @param speedup
-     *            Ускорение
+     *      Acceleration
      */
-
     public static void logResults(double durationSingle, double durationParallel, double speedup) {
         StringBuilder logMessage = new StringBuilder();
-        logMessage.append("Однопоточная реализация заняла: ").append(String.format(TIME_FORMAT, durationSingle))
-                .append(SECONDS_SUFFIX).append("Многопоточная реализация заняла: ")
+        logMessage.append("The single-threaded implementation took: ").append(String.format(TIME_FORMAT, durationSingle))
+                .append(SECONDS_SUFFIX).append("The multithreaded implementation took: ")
                 .append(String.format(TIME_FORMAT, durationParallel)).append(SECONDS_SUFFIX).append("Ускорение: ")
                 .append(String.format(SPEEDUP_FORMAT, speedup)).append("x\n");
 
-        LOGGER.info("Однопоточная реализация заняла: {} секунд", String.format(TIME_FORMAT, durationSingle));
-        LOGGER.info("Многопоточная реализация заняла: {} секунд", String.format(TIME_FORMAT, durationParallel));
-        LOGGER.info("Ускорение: {}x", String.format(SPEEDUP_FORMAT, speedup));
+        LOGGER.info("The single-threaded implementation took: {} секунд", String.format(TIME_FORMAT, durationSingle));
+        LOGGER.info("The multithreaded implementation took: {} секунд", String.format(TIME_FORMAT, durationParallel));
+        LOGGER.info("Boost: {}x", String.format(SPEEDUP_FORMAT, speedup));
 
         writeToFile(logMessage.toString());
     }
 
     /**
-     * Записывает лог в файл.
+     * Writes the log to a file.
      *
      * @param message
-     *            Текст для записи.
+     *      Text to record.
      */
     private static void writeToFile(String message) {
         Path logFilePath = Path.of(FILE_NAME);
@@ -67,7 +64,7 @@ public final class PerformanceLogger {
                 writer.write(message);
             }
         } catch (IOException e) {
-            LOGGER.error("Ошибка записи в лог файл: {}", e.getMessage(), e);
+            LOGGER.error("Error writing to the log file: {}", e.getMessage(), e);
         }
     }
 }

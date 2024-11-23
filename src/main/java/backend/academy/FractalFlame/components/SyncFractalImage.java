@@ -1,30 +1,30 @@
 package backend.academy.FractalFlame.components;
 
 /**
- * Представляет синхронизированное фрактальное изображение с пикселями и механизмом блокировки для потокобезопасного
- * доступа.
+ * Represents a synchronized fractal image with pixels and a locking mechanism for thread-safe
+ * Access.
  *
  * @param data
- *            массив пикселей изображения
+ *      Image pixel array
  * @param width
- *            ширина изображения
+ *      Image width
  * @param height
- *            высота изображения
+ *      image height
  * @param locks
- *            массив объектов для синхронизации доступа к пикселям
+ *      an array of objects for synchronizing access to pixels
  */
 public record SyncFractalImage(Pixel[] data, int width, int height, Object[] locks)
     implements IFractalImage {
 
     /**
-     * Создает новое синхронизированное фрактальное изображение с заданной шириной и высотой.
+     * Creates a new synchronized fractal image with the specified width and height.
      *
      * @param width
-     *            ширина изображения
+     *      Image width
      * @param height
-     *            высота изображения
+     *      Image height
      *
-     * @return новый объект {@code SyncFractalImage}
+     * @return new object {@code SyncFractalImage}
      */
     public static SyncFractalImage create(int width, int height) {
         Pixel[] data = new Pixel[width * height];
@@ -40,28 +40,28 @@ public record SyncFractalImage(Pixel[] data, int width, int height, Object[] loc
     }
 
     /**
-     * Проверяет, содержится ли точка с координатами (x, y) внутри изображения.
+     * Checks whether a point with coordinates (x, y) is contained inside the image.
      *
      * @param x
-     *            координата x
+     * x coordinate
      * @param y
-     *            координата y
+     * y coordinate
      *
-     * @return {@code true}, если точка находится внутри изображения, иначе {@code false}
+     * @return {@code true} if the point is inside the image, otherwise {@code false}
      */
     public boolean contains(int x, int y) {
         return x >= 0 && x < width && y >= 0 && y < height;
     }
 
     /**
-     * Возвращает пиксель по заданным координатам (x, y) с использованием синхронизации.
+     * Returns a pixel at the specified coordinates (x, y) using synchronization.
      *
      * @param x
-     *            координата x
+     * x coordinate
      * @param y
-     *            координата y
+     * y coordinate
      *
-     * @return пиксель по заданным координатам или {@code null}, если координаты вне изображения
+     * @return pixel at the specified coordinates or {@code null} if the coordinates are outside the image
      */
     public Pixel pixel(int x, int y) {
         if (contains(x, y)) {
@@ -73,14 +73,14 @@ public record SyncFractalImage(Pixel[] data, int width, int height, Object[] loc
     }
 
     /**
-     * Обновляет пиксель по заданным координатам (x, y) новым значением с использованием синхронизации.
+     * Updates a pixel at the specified coordinates (x, y) with a new value using synchronization.
      *
      * @param x
-     *            координата x
+     *      x coordinate
      * @param y
-     *            координата y
+     *      y coordinate
      * @param newPixel
-     *            новый пиксель
+     *      new pixel
      */
     public void updatePixel(int x, int y, Pixel newPixel) {
         if (contains(x, y)) {

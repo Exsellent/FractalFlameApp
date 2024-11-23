@@ -16,22 +16,18 @@ public class SingleRendererTest {
 
     @Test
     void singleRenderTest() {
-        // Создаём объект рендера с симметрией 0
+
         Renderer renderer = new SingleRenderer(0);
 
-        // Создаём параметры для рендера
-        var image = renderer.render(FractalImage.create(10, 10), // Холст для рендера
-                new Rectangular(-1, -1, 2, 2), // Прямоугольная область
+        var image = renderer.render(FractalImage.create(10, 10),
+                new Rectangular(-1, -1, 2, 2),
                 List.of(new ColorTransformation(LinearTransformation.randomTransformation(),
-                        // Случайное линейное преобразование
-                        Color.generate() // Случайный цвет
-                )), List.of(new HeartTransformation()), // Вариация "Сердце"
-                20, // Количество сэмплов
+
+                    Color.generate())), List.of(new HeartTransformation()), 20,
                 20, // Итерации на сэмпл
-                0 // Начальное значение для генератора случайных чисел
+            0
         );
 
-        // Проверяем, что изображение создано
         assertNotNull(image, "Rendered image should not be null");
     }
 }

@@ -6,7 +6,7 @@ import backend.academy.FractalFlame.transformations.Transformation;
 import java.util.List;
 
 /**
- * Конфигурация для тестирования производительности рендеров.
+ * Configuration for testing renderer performance.
  */
 public class RenderConfig {
     private final int width;
@@ -74,7 +74,7 @@ public class RenderConfig {
     }
 
     /**
-     * Билдер для конфигурации RenderConfig.
+     * Builder for the RenderConfig configuration.
      */
     public static class Builder {
         private int width;

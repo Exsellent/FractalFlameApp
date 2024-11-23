@@ -18,10 +18,10 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 /**
- * Класс для многопоточного рендеринга фрактальных изображений.
+ * Class for multithreaded rendering of fractal images.
  * <p>
- * Этот класс реализует методы для рендеринга фрактальных изображений с использованием нескольких потоков для повышения
- * производительности.
+ * This class implements methods for rendering fractal images using multiple streams to improve
+ * performance.
  * </p>
  *
  * @since 1.0
@@ -33,12 +33,12 @@ public class MultiRenderer extends AbstractRenderer {
     private final static Logger LOGGER = LogManager.getLogger();
 
     /**
-     * Конструктор для создания многопоточного рендерера.
+     * Constructor for creating a multithreaded renderer.
      *
      * @param threadCount
-     *            количество потоков
+     *      number of streams
      * @param symmetry
-     *            симметрия
+     *      symmetry
      */
     public MultiRenderer(int threadCount, int symmetry) {
         this.threadCount = threadCount;
@@ -46,24 +46,24 @@ public class MultiRenderer extends AbstractRenderer {
     }
 
     /**
-     * Рендерит фрактальное изображение на холсте.
+     * Renders a fractal image on canvas.
      *
      * @param canvas
-     *            холст для рендеринга
+     *      canvas for rendering
      * @param world
-     *            прямоугольная область мира
+     *      rectangular area of the world
      * @param affine
-     *            список цветовых преобразований
+     *      List of color transformations
      * @param variations
-     *            список вариаций преобразований
+     *      List of transformation variations
      * @param samples
-     *            количество образцов
+     *      number of samples
      * @param iterPerSample
-     *            количество итераций на образец
+     *      number of iterations per sample
      * @param seed
-     *            начальное значение для генератора случайных чисел
+     *      the initial value for the random number generator
      *
-     * @return сгенерированное фрактальное изображение
+     * @return generated fractal image
      */
     @Override
     public IFractalImage render(IFractalImage canvas, Rectangular world, List<ColorTransformation> affine,

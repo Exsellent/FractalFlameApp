@@ -7,10 +7,10 @@ import backend.academy.FractalFlame.transformations.Transformation;
 import java.util.List;
 
 /**
- * Интерфейс для рендеринга фрактальных изображений с различными преобразованиями и параметрами.
+ * Interface for rendering fractal images with various transformations and parameters.
  * <p>
- * Этот интерфейс определяет метод для рендеринга фрактальных изображений, используя заданные преобразования, вариации и
- * параметры.
+ * This interface defines a method for rendering fractal images using specified transformations, variations, and
+ * parameters.
  * </p>
  *
  * @since 1.0
@@ -18,24 +18,24 @@ import java.util.List;
 public interface Renderer {
 
     /**
-     * Рендерит фрактальное изображение на холсте.
+     * Renders a fractal image on canvas.
      *
      * @param canvas
-     *            холст для рендеринга
+     *      canvas for rendering
      * @param world
-     *            прямоугольная область мира
+     *      rectangular area of the world
      * @param affine
-     *            список цветовых преобразований
+     *      List of color transformations
      * @param variations
-     *            список вариаций преобразований
+     *      List of transformation variations
      * @param samples
-     *            количество образцов
+     *      number of samples
      * @param iterPerSample
-     *            количество итераций на образец
+     *      number of iterations per sample
      * @param seed
-     *            начальное значение для генератора случайных чисел
+     *      the initial value for the random number generator
      *
-     * @return сгенерированное фрактальное изображение
+     * @return generated fractal image
      */
     IFractalImage render(IFractalImage canvas, Rectangular world, List<ColorTransformation> affine,
             List<Transformation> variations, int samples, int iterPerSample, int seed);

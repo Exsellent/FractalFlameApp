@@ -11,7 +11,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 /**
- * Класс для тестирования производительности рендеров.
+ * A class for testing the performance of renderers.
  */
 public class RenderPerformanceTester {
 

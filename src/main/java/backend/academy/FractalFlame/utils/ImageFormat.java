@@ -1,10 +1,10 @@
 package backend.academy.FractalFlame.utils;
 
 /**
- * Enum представляющий различные графические форматы.
- * <p>
- * Содержит список поддерживаемых форматов изображений, которые можно использовать для сохранения или обработки
- * изображений в приложении.
+ * Enum representing various graphic formats.
+ *  <p>
+ *  Contains a list of supported image formats that can be used for saving or processing
+ *  Images in the application.
  * </p>
  * <ul>
  * <li>{@link #JPEG} - JPEG image format</li>
@@ -15,18 +15,7 @@ package backend.academy.FractalFlame.utils;
  * @since 1.0
  */
 public enum ImageFormat {
-    /**
-     * JPEG image format.
-     */
     JPEG,
-
-    /**
-     * BMP image format.
-     */
     BMP,
-
-    /**
-     * PNG image format.
-     */
     PNG
 }

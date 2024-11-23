@@ -1,78 +1,75 @@
 package backend.academy.FractalFlame.components;
 
-/**
- * Интерфейс, представляющий фрактальное изображение.
- */
 public interface IFractalImage {
 
     /**
-     * Создает новое фрактальное изображение с заданной шириной и высотой.
+     * Creates a new fractal image with the specified width and height.
      *
      * @param width
-     *            ширина изображения
+     *      Image width
      * @param height
-     *            высота изображения
+     *      Image height
      *
-     * @return новый объект {@code IFractalImage}
+     * @return new object {@code IFractalImage}
      */
     static IFractalImage create(int width, int height) {
         return null;
     }
 
     /**
-     * Проверяет, содержится ли точка с координатами (x, y) внутри изображения.
+     * Checks whether a point with coordinates (x, y) is contained inside the image.
      *
      * @param x
-     *            координата x
+     *      x coordinate
      * @param y
-     *            координата y
+     *      y coordinate
      *
-     * @return {@code true}, если точка находится внутри изображения, иначе {@code false}
+     * @return {@code true} if the point is inside the image, otherwise {@code false}
      */
     boolean contains(int x, int y);
 
     /**
-     * Возвращает пиксель по заданным координатам (x, y).
+     * Returns a pixel at the specified coordinates (x, y).
      *
      * @param x
-     *            координата x
+     *      x coordinate
      * @param y
-     *            координата y
+     *      y coordinate
      *
-     * @return пиксель по заданным координатам или {@code null}, если координаты вне изображения
+     * @return pixel at the specified coordinates or {@code null} if the coordinates are outside the image
      */
     Pixel pixel(int x, int y);
 
     /**
-     * Обновляет пиксель по заданным координатам (x, y) новым значением.
+     * Updates the pixel at the specified coordinates (x, y) with a new value.
      *
      * @param x
-     *            координата x
+     *      x coordinate
      * @param y
-     *            координата y
+     *      y coordinate
      * @param newPixel
-     *            новый пиксель
+     *      new pixel
      */
     void updatePixel(int x, int y, Pixel newPixel);
 
     /**
-     * Возвращает ширину изображения.
+     * Returns the width of the image.
      *
-     * @return ширина изображения
+     * @return image width
      */
     int getWidth();
 
     /**
-     * Возвращает высоту изображения.
+     * Returns the height of the image.
      *
-     * @return высота изображения
+     * @return image height
      */
     int getHeight();
 
     /**
-     * Возвращает массив пикселей изображения.
+     * Returns an array of image pixels.
      *
-     * @return массив пикселей
+     * @return pixel array
      */
     Pixel[] getData();
 }

@@ -8,9 +8,9 @@ import java.nio.file.Path;
 import javax.imageio.ImageIO;
 
 /**
- * Утилитный класс для работы с изображениями.
+ * A utility class for working with images.
  * <p>
- * Этот класс предоставляет методы для сохранения фрактальных изображений в различных форматах.
+ * This class provides methods for saving fractal images in various formats.
  * </p>
  *
  * @since 1.0
@@ -18,24 +18,21 @@ import javax.imageio.ImageIO;
 @SuppressWarnings("MagicNumber")
 public final class ImageUtils {
 
-    /**
-     * Приватный конструктор для предотвращения создания экземпляров класса.
-     */
     private ImageUtils() {
     }
 
     /**
-     * Сохраняет фрактальное изображение в указанный файл в заданном формате.
+     * Saves the fractal image to the specified file in the specified format.
      *
      * @param image
-     *            фрактальное изображение для сохранения
+     *      Fractal image to save
      * @param filename
-     *            путь к файлу, в который будет сохранено изображение
+     *      the path to the file where the image will be saved
      * @param format
-     *            формат изображения
+     *      Image format
      *
      * @throws IOException
-     *             если произошла ошибка ввода-вывода при сохранении изображения
+     *      if an I/O error occurred while saving the image
      */
     public static void save(IFractalImage image, Path filename, ImageFormat format) throws IOException {
         BufferedImage bufferedImage = convertToBufferedImage(image);
@@ -43,12 +40,12 @@ public final class ImageUtils {
     }
 
     /**
-     * Конвертирует фрактальное изображение в {@link BufferedImage}.
+     * Converts a fractal image to {@link BufferedImage}.
      *
      * @param fractalImage
-     *            фрактальное изображение для конвертации
+     *      fractal image for conversion
      *
-     * @return объект {@link BufferedImage}, представляющий фрактальное изображение
+     * @return object {@link BufferedImage} representing a fractal image
      */
     private static BufferedImage convertToBufferedImage(IFractalImage fractalImage) {
         BufferedImage bufferedImage = new BufferedImage(fractalImage.getWidth(), fractalImage.getHeight(),

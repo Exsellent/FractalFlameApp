@@ -4,10 +4,10 @@ import backend.academy.FractalFlame.components.Point;
 import java.util.Random;
 
 /**
- * Класс для линейных преобразований точек.
+ * Class for linear transformations of points.
  * <p>
- * Этот класс реализует интерфейс {@link Transformation} и предоставляет методы для применения линейных преобразований к
- * точкам, а также генерации случайных линейных преобразований.
+ * This class implements the {@link Transformation} interface and provides methods for applying linear transformations to
+ * points, as well as generating random linear transformations.
  * </p>
  *
  * @since 1.0
@@ -24,20 +24,20 @@ public class LinearTransformation implements Transformation {
     private final double f;
 
     /**
-     * Конструктор для создания линейного преобразования с заданными коэффициентами.
+     * Constructor for creating a linear transformation with specified coefficients.
      *
      * @param a
-     *            коэффициент для x
+     *      coefficient for x
      * @param b
-     *            коэффициент для y
+     *      the coefficient for y
      * @param c
-     *            смещение для x
+     *      offset for x
      * @param d
-     *            коэффициент для x
+     *      the coefficient for x
      * @param e
-     *            коэффициент для y
+     *      coefficient for y
      * @param f
-     *            смещение для y
+     *      offset for y
      */
     public LinearTransformation(double a, double b, double c, double d, double e, double f) {
         this.a = a;
@@ -49,12 +49,12 @@ public class LinearTransformation implements Transformation {
     }
 
     /**
-     * Применяет линейное преобразование к заданной точке.
+     * Applies a linear transformation to a given point.
      *
      * @param point
-     *            точка для преобразования
+     *      point for conversion
      *
-     * @return новая точка после преобразования
+     * @return new point after conversion
      */
     @Override
     public Point apply(Point point) {
@@ -64,9 +64,9 @@ public class LinearTransformation implements Transformation {
     }
 
     /**
-     * Генерирует случайное линейное преобразование.
+     * Generates a random linear transformation.
      *
-     * @return случайное линейное преобразование
+     * @return random linear transformation
      */
     @SuppressWarnings("MultipleVariableDeclarations")
     public static LinearTransformation randomTransformation() {

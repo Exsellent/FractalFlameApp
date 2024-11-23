@@ -1,26 +1,26 @@
 package backend.academy.FractalFlame.components;
 
 /**
- * Представляет прямоугольник с координатами верхнего левого угла (x, y), шириной и высотой.
+ * Represents a rectangle with the coordinates of the upper-left corner (x, y), width and height.
  *
  * @param x
- *            координата x верхнего левого угла
+ *      x coordinate of the upper-left corner
  * @param y
- *            координата y верхнего левого угла
+ *      the y coordinate of the upper-left corner
  * @param width
- *            ширина прямоугольника
+ *      rectangle width
  * @param height
- *            высота прямоугольника
+ *      rectangle height
  */
 public record Rectangular(double x, double y, double width, double height) {
 
     /**
-     * Проверяет, содержится ли точка внутри прямоугольника.
+     * Checks whether the point is contained inside the rectangle.
      *
      * @param p
-     *            точка для проверки
+     *      point for verification
      *
-     * @return {@code true}, если точка находится внутри прямоугольника, иначе {@code false}
+     * @return {@code true} if the point is inside the rectangle, otherwise {@code false}
      */
     public boolean contains(Point p) {
         return p.x() >= this.x && p.x() <= this.x + this.width && p.y() >= this.y && p.y() <= this.y + this.height;

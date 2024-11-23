@@ -17,22 +17,22 @@ public class MultiRendererTest {
 
     @Test
     void multiRenderTest() {
-        // Создаём объект рендера с 3 потоками и без симметрии
+        // Creating a render object with 3 threads and no symmetry
         Renderer renderer = new MultiRenderer(3, 0);
 
-        // Создаём параметры для рендера
-        IFractalImage image = renderer.render(FractalImage.create(10, 10), // Холст для рендера
+        // Creating parameters for the render
+        IFractalImage image = renderer.render(FractalImage.create(10, 10), // Canvas for rendering
                 new Rectangular(-1, -1, 2, 2),
                 List.of(new ColorTransformation(LinearTransformation.randomTransformation(),
-                        // Случайное линейное преобразование
-                        Color.generate() // Случайный цвет
-                )), List.of(new HeartTransformation()), // Вариация "Сердце"
-                20, // Количество сэмплов
-                20, // Итерации на сэмпл
-                0 // Начальное значение для генератора случайных чисел
+                    // Random linear transformation
+                        Color.generate() // Random color
+                )), List.of(new HeartTransformation()), // Variation of "Heart"
+                20, // Number of samples
+                20, // Iterations per sample
+                0 // Initial value for the random number generator
         );
 
-        // Проверяем, что изображение создано
+        // Check that the image has been created
         assertNotNull(image, "Rendered image should not be null");
     }
 }

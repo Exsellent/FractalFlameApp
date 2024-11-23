@@ -24,7 +24,7 @@ public class GammaCorrectionProcessorTest {
 
         Pixel processedPixel = image.pixel(0, 0);
 
-        // Проверяем каждый цветовой канал с использованием стандартного JUnit
+        // check each color channel using the standard JUnit
         assertEquals(expectedRed, processedPixel.color().r(), "Red channel should match expected value");
         assertEquals(expectedGreen, processedPixel.color().g(), "Green channel should match expected value");
         assertEquals(expectedBlue, processedPixel.color().b(), "Blue channel should match expected value");

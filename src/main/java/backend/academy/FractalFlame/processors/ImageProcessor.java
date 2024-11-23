@@ -3,9 +3,9 @@ package backend.academy.FractalFlame.processors;
 import backend.academy.FractalFlame.components.IFractalImage;
 
 /**
- * Функциональный интерфейс для обработки фрактальных изображений.
+ * Functional interface for fractal image processing.
  * <p>
- * Этот интерфейс определяет метод для обработки объектов {@link IFractalImage}.
+ * This interface defines a method for processing {@link IFractalImage} objects.
  * </p>
  *
  * @since 1.0
@@ -14,10 +14,10 @@ import backend.academy.FractalFlame.components.IFractalImage;
 public interface ImageProcessor {
 
     /**
-     * Обрабатывает фрактальное изображение.
+     * Processes a fractal image.
      *
      * @param image
-     *            фрактальное изображение для обработки
+     *      fractal image for processing
      */
     void process(IFractalImage image);
 }

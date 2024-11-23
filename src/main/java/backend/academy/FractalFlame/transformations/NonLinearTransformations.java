@@ -2,7 +2,7 @@ package backend.academy.FractalFlame.transformations;
 
 public enum NonLinearTransformations {
 
-    // 2D Трансформации
+    // 2D Transformations
     CYLINDER(new CylinderTransformation()), DIAMOND(new DiamondTransformation()), DISC(new DiskTransformation()),
     FISHEYE(new FisheyeTransformation()), HANDKERCHIEF(new HandkerchiefTransformation()),
     HEART(new HeartTransformation()), HORSESHOE(new HorseshoeTransformation()),

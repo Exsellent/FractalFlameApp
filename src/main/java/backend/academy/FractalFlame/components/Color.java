@@ -3,18 +3,18 @@ package backend.academy.FractalFlame.components;
 import java.util.Random;
 
 /**
- * Представляет цвет RGB с красными, зелеными и синими компонентами. Каждый компонент представляет собой целое значение
- * от 0 до 255 включительно.
+ * Represents an RGB color with red, green, and blue components. Each component represents an integer value
+ * from 0 to 255 inclusive.
  */
 public record Color(int r, int g, int b) {
 
     private static final int BOUND = 256;
 
     /**
-     * Генерирует случайный цвет RGB.
+     * Generates a random RGB color.
      *
-     * @return новый объект {@code Color} с каждым из его компонентов RGB, выбранным случайным образом в диапазоне от 0
-     *         (включительно) до 256 (включительно).
+     * @return a new object {@code Color} with each of its RGB components randomly selected in the range from 0
+     * (inclusive) to 256 (inclusive).
      */
     public static Color generate() {
         Random random = new Random();

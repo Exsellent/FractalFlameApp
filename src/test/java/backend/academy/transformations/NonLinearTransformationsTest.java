@@ -12,7 +12,7 @@ public class NonLinearTransformationsTest {
 
     @Test
     public void getTransformation_shouldReturnValidTransformation() {
-        // Перебираем все значения перечисления и проверяем их валидность
+        // iterate through all the enumeration values and check their validity
         for (NonLinearTransformations transformationEnum : NonLinearTransformations.values()) {
             assertNotNull(transformationEnum.getTransformation(),
                     "Transformation should not be null for " + transformationEnum.name());
@@ -23,7 +23,7 @@ public class NonLinearTransformationsTest {
 
     @Test
     public void getByNumber_shouldReturnCorrectTransformation() {
-        // Проверяем, что метод возвращает правильное преобразование по индексу
+        // Check that the method returns the correct index conversion
         NonLinearTransformations[] values = NonLinearTransformations.values();
         for (int i = 0; i < values.length; i++) {
             assertEquals(values[i].getTransformation(), NonLinearTransformations.values()[i].getTransformation(),
@@ -33,7 +33,7 @@ public class NonLinearTransformationsTest {
 
     @Test
     public void getByNumber_withInvalidNumber_shouldThrowException() {
-        // Проверяем, что метод выбрасывает исключение для некорректного индекса
+        // Check that the method throws an exception for an incorrect index
         int invalidNumber = NonLinearTransformations.values().length; // Вне диапазона
 
         assertThrows(ArrayIndexOutOfBoundsException.class, () -> {

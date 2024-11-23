@@ -4,10 +4,10 @@ import backend.academy.FractalFlame.components.Point;
 import java.util.function.Function;
 
 /**
- * Интерфейс для преобразований точек.
+ * Interface for point transformations.
  * <p>
- * Этот интерфейс расширяет {@link Function} и предоставляет методы для вычисления различных характеристик точек, таких
- * как радиус и угол.
+ * This interface extends the {@link Function} and provides methods for calculating various characteristics of points, such
+ as radius and angle.
  * </p>
  *
  * @since 1.0
@@ -15,36 +15,36 @@ import java.util.function.Function;
 public interface Transformation extends Function<Point, Point> {
 
     /**
-     * Вычисляет радиус точки.
+     * Calculates the radius of a point.
      *
      * @param point
-     *            точка, для которой вычисляется радиус
+     *      the point for which the radius is calculated
      *
-     * @return радиус точки
+     * @return point radius
      */
     default double radius(Point point) {
         return Math.sqrt(point.x() * point.x() + point.y() * point.y());
     }
 
     /**
-     * Вычисляет квадрат радиуса точки.
+     * Calculates the square of the radius of the point.
      *
      * @param point
-     *            точка, для которой вычисляется квадрат радиуса
+     *      the point for which the square of the radius is calculated
      *
-     * @return квадрат радиуса точки
+     * @return the square of the point radius
      */
     default double radiusSquared(Point point) {
         return point.x() * point.x() + point.y() * point.y();
     }
 
     /**
-     * Вычисляет угол (тета) точки.
+     * Calculates the angle (theta) of a point.
      *
      * @param point
-     *            точка, для которой вычисляется угол
+     * the point for which the angle is calculated
      *
-     * @return угол точки в радианах
+     * @return the angle of the point in radians
      */
     default double theta(Point point) {
         return Math.atan2(point.y(), point.x());

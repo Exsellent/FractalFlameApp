@@ -1,20 +1,20 @@
 package backend.academy.FractalFlame.components;
 
 /**
- * Фрактальное изображение, использующее массив объектов {@link Pixel}. Содержит данные о пикселях, а также ширину и
- * высоту изображения.
+ * A fractal image using an array of {@link Pixel} objects. Contains pixel data, as well as the width and
+ * height of the image.
  */
 public record FractalImage(Pixel[] data, int width, int height) implements IFractalImage {
 
     /**
-     * Создает новое фрактальное изображение с заданной шириной и высотой.
+     * Creates a new fractal image with the specified width and height.
      *
      * @param width
-     *            ширина изображения
+     *      Image width
      * @param height
-     *            высота изображения
+     *      Image height
      *
-     * @return новый объект {@code FractalImage}
+     * @return new object {@code FractalImage}
      */
     public static FractalImage create(int width, int height) {
         Pixel[] data = new Pixel[width * height];
@@ -25,28 +25,28 @@ public record FractalImage(Pixel[] data, int width, int height) implements IFrac
     }
 
     /**
-     * Проверяет, содержится ли точка с координатами (x, y) внутри изображения.
+     * Checks whether a point with coordinates (x, y) is contained inside the image.
      *
      * @param x
-     *            координата x
+     *      x coordinate
      * @param y
-     *            координата y
+     *      y coordinate
      *
-     * @return {@code true}, если точка находится внутри изображения, иначе {@code false}
+     * @return {@code true} if the point is inside the image, otherwise {@code false}
      */
     public boolean contains(int x, int y) {
         return x >= 0 && x < width && y >= 0 && y < height;
     }
 
     /**
-     * Возвращает пиксель по заданным координатам (x, y).
+     * Returns a pixel at the specified coordinates (x, y).
      *
      * @param x
-     *            координата x
+     *      x coordinate
      * @param y
-     *            координата y
+     *      y coordinate
      *
-     * @return пиксель по заданным координатам или {@code null}, если координаты вне изображения
+     * @return pixel at the specified coordinates or {@code null} if the coordinates are outside the image
      */
     public Pixel pixel(int x, int y) {
         if (contains(x, y)) {
@@ -56,14 +56,14 @@ public record FractalImage(Pixel[] data, int width, int height) implements IFrac
     }
 
     /**
-     * Обновляет пиксель по заданным координатам (x, y) новым значением.
+     * Updates the pixel at the specified coordinates (x, y) with a new value.
      *
      * @param x
-     *            координата x
+     *      x coordinate
      * @param y
-     *            координата y
+     *      y coordinate
      * @param newPixel
-     *            новый пиксель
+     *      new pixel
      */
     public void updatePixel(int x, int y, Pixel newPixel) {
         if (contains(x, y)) {

@@ -1,31 +1,32 @@
 package backend.academy.FractalFlame.components;
 
 /**
- * Аффинное преобразование с коэффициентами и информацией о цвете.
+ * Affine transformation with coefficients and color information.
  * <p>
- * Аффинное преобразование определяется шестью коэффициентами (a, b, c, d, e, f), которые используются для
- * преобразования координат, а также цветовой информацией (red, green, blue).
- * </p>
+ * The affine transformation is determined by six coefficients (a, b, c, d, e, f), which are used for
+ * coordinate transformation, as well as color information (red, green, blue).
+
  *
  * @param a
- *            коэффициент для x
+ *      coefficient for x
  * @param b
- *            коэффициент для y
+ *      coefficient for y
  * @param c
- *            коэффициент для x
+ *      coefficient for x
  * @param d
- *            коэффициент для y
+ *      the coefficient for y
  * @param e
- *            смещение по x
+ *      x offset
  * @param f
- *            смещение по y
+ *      y offset
  * @param red
- *            компонент красного цвета (0-255)
+ *      red component (0-255)
  * @param green
- *            компонент зеленого цвета (0-255)
+ *      green color component (0-255)
  * @param blue
- *            компонент синего цвета (0-255)
+ *      Blue component (0-255)
  */
+
 @SuppressWarnings("checkstyle:RecordComponentNumber")
 public record AffineTransformation(double a, double b, double c, double d, double e, double f, int red, int green,
         int blue) {

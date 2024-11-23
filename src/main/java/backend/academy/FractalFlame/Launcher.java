@@ -24,10 +24,10 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 /**
- * Класс запуска приложения для генерации фрактальных изображений.
+ * A class for launching an application for generating fractal images.
  * <p>
- * Этот класс отвечает за настройку конфигурации через ввод пользователя, запуск процесса рендеринга и сохранение
- * сгенерированных изображений.
+ * This class is responsible for configuring the configuration through user input, starting the rendering process, and saving
+ * Generated images.
  * </p>
  *
  * @since 1.0

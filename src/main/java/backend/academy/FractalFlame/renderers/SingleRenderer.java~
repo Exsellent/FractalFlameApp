@@ -31,24 +31,24 @@ public class SingleRenderer extends AbstractRenderer {
     }
 
     /**
-     * Renders a fractal image on canvas.
+     * Рендерит фрактальное изображение на холсте.
      *
      * @param canvas
-     *      canvas for rendering
+     *            холст для рендеринга
      * @param world
-     *      rectangular area of the world
+     *            прямоугольная область мира
      * @param affine
-     *      List of color transformations
+     *            список цветовых преобразований
      * @param variations
-     *      List of transformation variations
+     *            список вариаций преобразований
      * @param samples
-     *      number of samples
+     *            количество образцов
      * @param iterPerSample
-     *      number of iterations per sample
+     *            количество итераций на образец
      * @param seed
-     *      the initial value for the random number generator
+     *            начальное значение для генератора случайных чисел
      *
-     * @return generated fractal image
+     * @return сгенерированное фрактальное изображение
      */
     @Override
     public IFractalImage render(IFractalImage canvas, Rectangular world, List<ColorTransformation> affine,

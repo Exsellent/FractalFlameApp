@@ -25,10 +25,10 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 /**
- * Основной класс приложения для генерации и сохранения фрактальных изображений.
+ * The main class of application for generating and saving fractal images.
  * <p>
- * Этот класс содержит методы для настройки и запуска процесса генерации фракталов, а также для сохранения
- * сгенерированных изображений.
+ * This class contains methods for configuring and starting the fractal generation process, as well as for saving
+ * Generated images.
  * </p>
  *
  * @since 1.0
@@ -41,10 +41,10 @@ public class FractalFlameApp {
     }
 
     /**
-     * Генерирует и сохраняет фрактальное изображение на основе конфигурации.
+     * Generates and saves a fractal image based on the configuration.
      *
      * @param config
-     *            конфигурация для генерации фрактала
+     *      configuration for fractal generation
      */
     public static void generateAndSaveFractal(Config config) {
         try {
@@ -76,7 +76,7 @@ public class FractalFlameApp {
     }
 
     /**
-     * Создаёт холст для рендеринга.
+     * Creates a canvas for rendering.
      */
     private static IFractalImage createCanvas(Config config) {
         return config.getThreadsCount() <= 1 ? FractalImage.create(config.getWidth(), config.getHeight())
@@ -106,7 +106,7 @@ public class FractalFlameApp {
     }
 
     /**
-     * Подготавливает список аффинных преобразований.
+     * Prepares a list of affine transformations.
      */
     private static List<ColorTransformation> prepareAffineTransformations(int randomCount,
             AffineTransformation[] preset) {

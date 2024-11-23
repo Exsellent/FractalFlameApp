@@ -14,7 +14,7 @@ public class DiamondTransformation implements Transformation {
         double newX = Math.sin(theta) * Math.sin(radius);
         double newY = Math.cos(theta) * Math.cos(radius);
 
-        // масштабирование для эффекта пирамиды Diamond
+        // scaling for the Diamond pyramid effect
         newX *= SCALE_X;
         newY *= SCALE_Y;
 
