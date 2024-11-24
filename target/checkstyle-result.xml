@@ -3,10 +3,8 @@
 <file name="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\config\Config.java">
 <error line="7" column="1" severity="warning" message="Private ctor in non-final class. Inspect the code and make sure its intended." source="com.puppycrawl.tools.checkstyle.checks.design.FinalClassCheck"/>
 </file>
-<file name="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\config\ConfigLoader.java">
-</file>
 <file name="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\FractalFlameApp.java">
-<error line="35" column="1" severity="warning" message="Private ctor in non-final class. Inspect the code and make sure its intended." source="com.puppycrawl.tools.checkstyle.checks.design.FinalClassCheck"/>
+<error line="36" column="1" severity="warning" message="Private ctor in non-final class. Inspect the code and make sure its intended." source="com.puppycrawl.tools.checkstyle.checks.design.FinalClassCheck"/>
 </file>
 <file name="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\Launcher.java">
 <error line="35" column="1" severity="warning" message="Private ctor in non-final class. Inspect the code and make sure its intended." source="com.puppycrawl.tools.checkstyle.checks.design.FinalClassCheck"/>
