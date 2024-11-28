@@ -5,8 +5,6 @@ import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -16,10 +14,11 @@ import org.apache.logging.log4j.Logger;
 public final class PerformanceLogger {
 
     private static final Logger LOGGER = LogManager.getLogger(PerformanceLogger.class);
-    private static final String FILE_NAME = "results.txt";
-    private static final DateTimeFormatter DATE_FORMAT = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+    private static final String FILE_NAME = "performance_results.txt";
     private static final double NANOSECONDS_TO_SECONDS = 1_000_000_000.0;
-    private static final String SEPARATOR = "----------------------------------\n";
+    private static final String TIME_FORMAT = "%.3f";
+    private static final String SPEEDUP_FORMAT = "%.2f";
+    private static final String SECONDS_SUFFIX = " секунд\n";
 
     private PerformanceLogger() {
         throw new UnsupportedOperationException("Utility class");
@@ -32,25 +31,22 @@ public final class PerformanceLogger {
      *            Время выполнения однопоточной реализации (в наносекундах)
      * @param durationParallel
      *            Время выполнения многопоточной реализации (в наносекундах)
+     * @param speedup
+     *            Ускорение
      */
-    public static void logResults(long durationSingle, long durationParallel) {
+    public static void logResults(double durationSingle, double durationParallel, double speedup) {
         StringBuilder logMessage = new StringBuilder();
-        logMessage.append("Результаты производительности\n").append(SEPARATOR).append("Дата и время: ")
-                .append(LocalDateTime.now().format(DATE_FORMAT)).append("\n")
-                .append(String.format("Однопоточная реализация заняла: %.3f секунд%n",
-                        durationSingle / NANOSECONDS_TO_SECONDS))
-                .append(String.format("Многопоточная реализация заняла: %.3f секунд%n",
-                        durationParallel / NANOSECONDS_TO_SECONDS));
+        logMessage.append("Однопоточная реализация заняла: ").append(String.format(TIME_FORMAT, durationSingle))
+                .append(SECONDS_SUFFIX).append("Многопоточная реализация заняла: ")
+                .append(String.format(TIME_FORMAT, durationParallel)).append(SECONDS_SUFFIX).append("Ускорение: ")
+                .append(String.format(SPEEDUP_FORMAT, speedup)).append("x\n");
 
-        if (durationParallel < durationSingle) {
-            logMessage.append(String.format("Многопоточная реализация быстрее на %.3f секунд%n",
-                    (durationSingle - durationParallel) / NANOSECONDS_TO_SECONDS));
-        } else {
-            logMessage.append(String.format("Однопоточная реализация быстрее на %.3f секунд%n",
-                    (durationParallel - durationSingle) / NANOSECONDS_TO_SECONDS));
-        }
+        // Логирование через Log4j
+        LOGGER.info("Однопоточная реализация заняла: {} секунд", String.format(TIME_FORMAT, durationSingle));
+        LOGGER.info("Многопоточная реализация заняла: {} секунд", String.format(TIME_FORMAT, durationParallel));
+        LOGGER.info("Ускорение: {}x", String.format(SPEEDUP_FORMAT, speedup));
 
-        logMessage.append(SEPARATOR);
+        // Запись в файл
         writeToFile(logMessage.toString());
     }
 
@@ -61,13 +57,15 @@ public final class PerformanceLogger {
      *            Текст для записи.
      */
     private static void writeToFile(String message) {
+        Path logFilePath = Path.of(FILE_NAME);
+
         try {
-            Path logFilePath = Path.of(FILE_NAME);
+            // Создаем файл, если его нет
             if (!Files.exists(logFilePath)) {
                 Files.createFile(logFilePath);
             }
 
-            // Указываем кодировку UTF-8
+            // Используем Files.newBufferedWriter для записи с кодировкой UTF-8
             try (FileWriter writer = new FileWriter(logFilePath.toFile(), StandardCharsets.UTF_8, true)) {
                 writer.write(message);
             }

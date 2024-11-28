@@ -38,6 +38,7 @@ public final class PerformanceMeasurer {
      *            время выполнения в наносекундах
      */
     public static void logPerformanceResults(String rendererType, long duration) {
-        LOGGER.info("{} реализация заняла: {:.3f} секунд", rendererType, duration / NANOSECONDS_TO_SECONDS);
+        double durationInSeconds = duration / NANOSECONDS_TO_SECONDS;
+        LOGGER.info("{} реализация заняла: {} секунд", rendererType, durationInSeconds);
     }
 }

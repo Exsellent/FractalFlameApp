@@ -50,7 +50,6 @@ public final class PerformanceTesterLauncher {
      *
      * @return конфигурация {@link RenderConfig}
      */
-
     private static RenderConfig createRenderConfig() {
         final int width = 1920;
         final int height = 1080;

@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <checkstyle version="10.17.0">
+<file name="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\components\Point.java">
+</file>
 <file name="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\config\Config.java">
 <error line="7" column="1" severity="warning" message="Private ctor in non-final class. Inspect the code and make sure its intended." source="com.puppycrawl.tools.checkstyle.checks.design.FinalClassCheck"/>
 </file>

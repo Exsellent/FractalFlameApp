@@ -17,6 +17,8 @@ public class RenderPerformanceTester {
 
     private static final Logger LOGGER = LogManager.getLogger(RenderPerformanceTester.class);
     private static final double NANOSECONDS_TO_SECONDS = 1_000_000_000.0;
+    private static final String TIME_FORMAT = "%.3f";
+    private static final String SPEEDUP_FORMAT = "%.2f";
 
     private final SingleRenderer singleRenderer;
     private final ParallelRenderer parallelRenderer;
@@ -46,16 +48,18 @@ public class RenderPerformanceTester {
         long singleThreadDuration = PerformanceMeasurer.measureExecutionTime(
                 () -> singleRenderer.render(FractalImage.create(canvas.getWidth(), canvas.getHeight()), world, affine,
                         variations, samples, iterPerSample, seed));
-        LOGGER.info("Однопоточная реализация заняла: {:.3f} секунд", singleThreadDuration / NANOSECONDS_TO_SECONDS);
+        double singleThreadInSeconds = singleThreadDuration / NANOSECONDS_TO_SECONDS;
+        LOGGER.info("Однопоточная реализация заняла: {} секунд", String.format(TIME_FORMAT, singleThreadInSeconds));
 
         // Тест многопоточной реализации
         long multiThreadDuration = PerformanceMeasurer.measureExecutionTime(
                 () -> parallelRenderer.render(FractalImage.create(canvas.getWidth(), canvas.getHeight()), world, affine,
                         variations, samples, iterPerSample, seed));
-        LOGGER.info("Многопоточная реализация заняла: {:.3f} секунд", multiThreadDuration / NANOSECONDS_TO_SECONDS);
+        double multiThreadInSeconds = multiThreadDuration / NANOSECONDS_TO_SECONDS;
+        LOGGER.info("Многопоточная реализация заняла: {} секунд", String.format(TIME_FORMAT, multiThreadInSeconds));
 
         // Вывод ускорения
-        double speedup = (double) singleThreadDuration / multiThreadDuration;
-        LOGGER.info("Ускорение: {:.2f}x", speedup);
+        double speedup = singleThreadInSeconds / multiThreadInSeconds;
+        LOGGER.info("Ускорение: {}x", String.format(SPEEDUP_FORMAT, speedup));
     }
 }
