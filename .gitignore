@@ -4,7 +4,7 @@
  #
  #### Maven ###
  #!.mvn/wrapper/maven-wrapper.jar
- #target/
+ target/
  #.flattened-pom.xml
  #dependency-reduced-pom.xml
  #
@@ -33,5 +33,4 @@
  *.swp
  *.DS_Store
  Thumbs.db
- target/
- out/
+  out/
