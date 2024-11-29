@@ -44,21 +44,19 @@ public class RenderPerformanceTester {
     }
 
     public void runPerformanceTest() {
-        // Тест однопоточной реализации
+
         long singleThreadDuration = PerformanceMeasurer.measureExecutionTime(
                 () -> singleRenderer.render(FractalImage.create(canvas.getWidth(), canvas.getHeight()), world, affine,
                         variations, samples, iterPerSample, seed));
         double singleThreadInSeconds = singleThreadDuration / NANOSECONDS_TO_SECONDS;
         LOGGER.info("Однопоточная реализация заняла: {} секунд", String.format(TIME_FORMAT, singleThreadInSeconds));
 
-        // Тест многопоточной реализации
         long multiThreadDuration = PerformanceMeasurer.measureExecutionTime(
                 () -> parallelRenderer.render(FractalImage.create(canvas.getWidth(), canvas.getHeight()), world, affine,
                         variations, samples, iterPerSample, seed));
         double multiThreadInSeconds = multiThreadDuration / NANOSECONDS_TO_SECONDS;
         LOGGER.info("Многопоточная реализация заняла: {} секунд", String.format(TIME_FORMAT, multiThreadInSeconds));
 
-        // Вывод ускорения
         double speedup = singleThreadInSeconds / multiThreadInSeconds;
         LOGGER.info("Ускорение: {}x", String.format(SPEEDUP_FORMAT, speedup));
     }

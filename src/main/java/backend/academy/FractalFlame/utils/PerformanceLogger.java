@@ -34,6 +34,7 @@ public final class PerformanceLogger {
      * @param speedup
      *            Ускорение
      */
+
     public static void logResults(double durationSingle, double durationParallel, double speedup) {
         StringBuilder logMessage = new StringBuilder();
         logMessage.append("Однопоточная реализация заняла: ").append(String.format(TIME_FORMAT, durationSingle))
@@ -41,12 +42,10 @@ public final class PerformanceLogger {
                 .append(String.format(TIME_FORMAT, durationParallel)).append(SECONDS_SUFFIX).append("Ускорение: ")
                 .append(String.format(SPEEDUP_FORMAT, speedup)).append("x\n");
 
-        // Логирование через Log4j
         LOGGER.info("Однопоточная реализация заняла: {} секунд", String.format(TIME_FORMAT, durationSingle));
         LOGGER.info("Многопоточная реализация заняла: {} секунд", String.format(TIME_FORMAT, durationParallel));
         LOGGER.info("Ускорение: {}x", String.format(SPEEDUP_FORMAT, speedup));
 
-        // Запись в файл
         writeToFile(logMessage.toString());
     }
 
@@ -60,12 +59,10 @@ public final class PerformanceLogger {
         Path logFilePath = Path.of(FILE_NAME);
 
         try {
-            // Создаем файл, если его нет
             if (!Files.exists(logFilePath)) {
                 Files.createFile(logFilePath);
             }
 
-            // Используем Files.newBufferedWriter для записи с кодировкой UTF-8
             try (FileWriter writer = new FileWriter(logFilePath.toFile(), StandardCharsets.UTF_8, true)) {
                 writer.write(message);
             }

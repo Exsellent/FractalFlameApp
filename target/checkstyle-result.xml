@@ -1,9 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <checkstyle version="10.17.0">
+<file name="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\components\AffineTransformation.java">
+</file>
+<file name="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\components\Color.java">
+</file>
+<file name="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\components\FractalImage.java">
+</file>
+<file name="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\components\IFractalImage.java">
+</file>
+<file name="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\components\Pixel.java">
+</file>
 <file name="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\components\Point.java">
+</file>
+<file name="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\components\Rectangular.java">
+</file>
+<file name="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\components\SyncFractalImage.java">
 </file>
 <file name="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\config\Config.java">
 <error line="7" column="1" severity="warning" message="Private ctor in non-final class. Inspect the code and make sure its intended." source="com.puppycrawl.tools.checkstyle.checks.design.FinalClassCheck"/>
+</file>
+<file name="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\config\ConfigLoader.java">
 </file>
 <file name="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\FractalFlameApp.java">
 <error line="36" column="1" severity="warning" message="Private ctor in non-final class. Inspect the code and make sure its intended." source="com.puppycrawl.tools.checkstyle.checks.design.FinalClassCheck"/>
@@ -14,7 +30,75 @@
 <file name="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\Main.java">
 <error line="6" column="1" severity="warning" message="Private ctor in non-final class. Inspect the code and make sure its intended." source="com.puppycrawl.tools.checkstyle.checks.design.FinalClassCheck"/>
 </file>
+<file name="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\processors\GammaCorrectionProcessor.java">
+</file>
+<file name="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\processors\ImageProcessor.java">
+</file>
+<file name="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\processors\LogarithmicGammaCorrectionProcessor.java">
+</file>
+<file name="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\renderers\AbstractRenderer.java">
+</file>
+<file name="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\renderers\MultiRenderer.java">
+</file>
+<file name="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\renderers\ParallelRenderer.java">
+</file>
 <file name="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\renderers\RenderConfig.java">
 <error line="11" column="1" severity="warning" message="Private ctor in non-final class. Inspect the code and make sure its intended." source="com.puppycrawl.tools.checkstyle.checks.design.FinalClassCheck"/>
+</file>
+<file name="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\renderers\Renderer.java">
+</file>
+<file name="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\renderers\RenderPerformanceTester.java">
+</file>
+<file name="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\renderers\SingleRenderer.java">
+</file>
+<file name="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\transformations\ColorTransformation.java">
+</file>
+<file name="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\transformations\ComplexDragonTransformation.java">
+</file>
+<file name="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\transformations\CylinderTransformation.java">
+</file>
+<file name="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\transformations\DiamondTransformation.java">
+</file>
+<file name="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\transformations\DiskTransformation.java">
+</file>
+<file name="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\transformations\FisheyeTransformation.java">
+</file>
+<file name="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\transformations\FlowerTransformation.java">
+</file>
+<file name="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\transformations\HandkerchiefTransformation.java">
+</file>
+<file name="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\transformations\HeartTransformation.java">
+</file>
+<file name="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\transformations\HorseshoeTransformation.java">
+</file>
+<file name="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\transformations\HyperbolicTransformation.java">
+</file>
+<file name="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\transformations\LinearTransformation.java">
+</file>
+<file name="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\transformations\MandalaTransformation.java">
+</file>
+<file name="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\transformations\NonLinearTransformations.java">
+</file>
+<file name="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\transformations\SphericalTransformation.java">
+</file>
+<file name="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\transformations\SpiralTransformation.java">
+</file>
+<file name="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\transformations\StarburstTransformation.java">
+</file>
+<file name="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\transformations\SwirlTransformation.java">
+</file>
+<file name="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\transformations\Transformation.java">
+</file>
+<file name="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\utils\ImageFormat.java">
+</file>
+<file name="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\utils\ImageUtils.java">
+</file>
+<file name="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\utils\PerformanceLogger.java">
+</file>
+<file name="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\utils\PerformanceMeasurer.java">
+</file>
+<file name="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\java\backend\academy\FractalFlame\utils\PerformanceTesterLauncher.java">
+</file>
+<file name="C:\Java\IntelIDEA\backend_academy_2024_project_4-java-Exsellent\src\main\resources\config.properties">
 </file>
 </checkstyle>

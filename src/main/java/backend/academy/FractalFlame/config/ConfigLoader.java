@@ -4,9 +4,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 
-/**
- * Класс для загрузки конфигурации из файла.
- */
+
 public final class ConfigLoader {
 
     private ConfigLoader() {

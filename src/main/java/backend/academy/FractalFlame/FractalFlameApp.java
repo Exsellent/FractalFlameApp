@@ -48,36 +48,28 @@ public class FractalFlameApp {
      */
     public static void generateAndSaveFractal(Config config) {
         try {
-            // Подготовка трансформаций
+
             List<ColorTransformation> affineTransformations = prepareAffineTransformations(
                     config.getRandomAffineTransformationsCount(), config.getPresetAffineTransformations());
 
-            // Выбор рендерера
             Renderer renderer = createRenderer(config);
 
-            // Создание холста
             IFractalImage canvas = createCanvas(config);
 
-            // Рендеринг
             IFractalImage fractalImage = renderer.render(canvas, createWorldRect(config), affineTransformations,
                     Arrays.asList(config.getNonlinearTransformations()), config.getSamples(), config.getIterations(),
                     config.getSeed());
 
-            // Коррекция изображения, если указано
             if (config.isWithCorrection()) {
                 applyGammaCorrection(fractalImage, config.getGamma());
             }
 
-            // Сохранение изображения
             saveFractalImage(fractalImage, config);
         } catch (Exception e) {
             LOGGER.error("Error during fractal generation and saving", e);
         }
     }
 
-    /**
-     * Создаёт рендерер на основе конфигурации.
-     */
     private static Renderer createRenderer(Config config) {
         return config.getThreadsCount() <= 1 ? new SingleRenderer(config.getSymmetry())
                 : new ParallelRenderer(config.getThreadsCount(), config.getSymmetry());
@@ -91,25 +83,16 @@ public class FractalFlameApp {
                 : SyncFractalImage.create(config.getWidth(), config.getHeight());
     }
 
-    /**
-     * Создаёт прямоугольник мира для рендеринга.
-     */
     private static Rectangular createWorldRect(Config config) {
         return new Rectangular(config.getMinX(), config.getMinY(), config.getMaxX() - config.getMinX(),
                 config.getMaxY() - config.getMinY());
     }
 
-    /**
-     * Применяет гамма-коррекцию к изображению.
-     */
     private static void applyGammaCorrection(IFractalImage image, double gamma) {
         ImageProcessor processor = new GammaCorrectionProcessor(gamma);
         processor.process(image);
     }
 
-    /**
-     * Сохраняет сгенерированное фрактальное изображение.
-     */
     private static void saveFractalImage(IFractalImage image, Config config) throws IOException {
         Path outputDir = Path.of(config.getDirectory());
         if (!Files.exists(outputDir)) {
@@ -129,12 +112,10 @@ public class FractalFlameApp {
             AffineTransformation[] preset) {
         List<ColorTransformation> transformations = new ArrayList<>();
 
-        // Генерация случайных аффинных преобразований
         for (int i = 0; i < randomCount; i++) {
             transformations.add(new ColorTransformation(LinearTransformation.randomTransformation(), Color.generate()));
         }
 
-        // Добавление предустановленных преобразований
         if (preset != null) {
             for (AffineTransformation affine : preset) {
                 transformations.add(new ColorTransformation(new LinearTransformation(affine.a(), affine.b(), affine.c(),

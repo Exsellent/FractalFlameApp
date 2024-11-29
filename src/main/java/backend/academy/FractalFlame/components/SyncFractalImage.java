@@ -13,7 +13,8 @@ package backend.academy.FractalFlame.components;
  * @param locks
  *            массив объектов для синхронизации доступа к пикселям
  */
-public record SyncFractalImage(Pixel[] data, int width, int height, Object[] locks) implements IFractalImage {
+public record SyncFractalImage(Pixel[] data, int width, int height, Object[] locks)
+    implements IFractalImage {
 
     /**
      * Создает новое синхронизированное фрактальное изображение с заданной шириной и высотой.

@@ -40,9 +40,6 @@ public class Launcher {
         throw new UnsupportedOperationException("Utility class");
     }
 
-    /**
-     * Запускает процесс генерации фрактального изображения.
-     */
     @SuppressWarnings("MagicNumber")
     public static void launch() {
         Config.Builder configBuilder = new Config.Builder();
@@ -50,14 +47,12 @@ public class Launcher {
         try (Scanner scanner = new Scanner(System.in)) {
             LOGGER.info("Welcome to Fractal Flame Generator!");
 
-            // Настройка конфигурации через ввод пользователя
             configBuilder = getFractalFlameConfigFromUser(scanner, configBuilder);
 
             LOGGER.info("Enter the output file name (JPEG, BMP, PNG):");
             String outputFilename = scanner.nextLine().trim();
             ImageFormat format = determineFormat(outputFilename);
 
-            // Настройка предопределённых аффинных преобразований
             if (configBuilder.build().getPresetAffineTransformations() == null) {
                 AffineTransformation[] defaultTransformations = {
                         new AffineTransformation(0.5, 0, 0, 0, 0.5, 0, 255, 0, 0),
@@ -66,7 +61,6 @@ public class Launcher {
                 configBuilder.setPresetAffineTransformations(defaultTransformations);
             }
 
-            // Выбор нелинейных преобразований
             List<String> selectedTransformations = selectTransformations(scanner);
             Transformation[] transformationsArray = selectedTransformations.stream().map(transformationName -> {
                 try {
@@ -80,19 +74,16 @@ public class Launcher {
             configBuilder.setNonlinearTransformations(transformationsArray);
             Config config = configBuilder.build();
 
-            // Создание рендера на основе конфигурации
             Renderer renderer = config.getThreadsCount() > 1
                     ? new ParallelRenderer(config.getThreadsCount(), config.getSymmetry())
                     : new SingleRenderer(config.getSymmetry());
 
-            // Рендеринг изображения
             IFractalImage image = renderer.render(SyncFractalImage.create(config.getWidth(), config.getHeight()),
                     new Rectangular(config.getMinX(), config.getMinY(), config.getMaxX() - config.getMinX(),
                             config.getMaxY() - config.getMinY()),
                     prepareAffineTransformations(config), List.of(transformationsArray), config.getSamples(),
                     config.getIterations(), config.getSeed());
 
-            // Сохранение изображения
             String directory = config.getDirectory().equals(CURRENT_DIRECTORY) ? "." : config.getDirectory();
             ImageUtils.save(image, Path.of(directory, outputFilename), format);
             LOGGER.info("Fractal saved successfully at {}", outputFilename);

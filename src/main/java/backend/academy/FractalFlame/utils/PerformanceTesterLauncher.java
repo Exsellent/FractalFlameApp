@@ -38,9 +38,7 @@ public final class PerformanceTesterLauncher {
      */
     @SuppressWarnings("UncommentedMain")
     public static void main(String[] args) {
-        // Конфигурация рендера
         RenderConfig renderConfig = createRenderConfig();
-        // Тестирование производительности
         RenderPerformanceTester tester = new RenderPerformanceTester(renderConfig);
         tester.runPerformanceTest();
     }
