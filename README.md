@@ -1,89 +1,118 @@
 # Fractal Flame Generator
 
-Проект реализует алгоритм генерации изображения фрактального пламени, основанный
-на идее *Chaos Game*. Программа поддерживает однопоточную и многопоточную реализацию
-для повышения производительности.
+**Project implements the algorithm for generating fractal flame images based on the *Chaos Game* idea.**  
+The program supports single-threaded and multi-threaded implementations for improved performance.
 
 ---
 
-## Описание
+## Table of Contents
 
-### Функциональные возможности
-1. Реализация цветного алгоритма генерации фрактального пламени.
-2. Возможность запуска программы в однопоточном и многопоточном режиме.
-3. Поддержка настройки параметров генерации:
-    - Размер изображения.
-    - Количество итераций.
-    - Набор трансформационных функций.
-4. Реализовано более 15 трансформаций, включая как основные из оригинальной статьи,
-так и дополнительные.
-
-### Нефункциональные требования
-- Программа легко конфигурируется через файл настроек.
-- Многопоточная реализация демонстрирует ускорение относительно однопоточной.
-- Публикуются сравнительные результаты работы:
-    - Конфигурация системы.
-    - Время выполнения.
-    - Количество используемых потоков.
-
----
-
-## Входные и выходные данные
-
-### Входные данные
-1. Размеры изображения (ширина и высота).
-2. Количество итераций для генерации фрактала.
-3. Список трансформационных функций и их параметры.
-
-### Выходные данные
-- Сгенерированное изображение фрактального пламени в формате PNG.
+- [Description](#description)
+- [Functional Features](#functional-features)
+- [Non-Functional Requirements](#non-functional-requirements)
+- [Input and Output Data](#input-and-output-data)
+- [Implementation Instructions](#implementation-instructions)
+- [Testing](#testing)
+- [Usage](#usage)
+- [Project Build](#project-build)
+- [Configuration Setup](#configuration-setup)
+- [Example Launch](#example-launch)
+- [Single-Threaded Mode](#single-threaded-mode)
+- [Multi-Threaded Mode](#multi-threaded-mode)
+- [Project Structure](#project-structure)
+- [Useful Maven Commands](#useful-maven-commands)
+- [Image Examples](#image-examples)
+- [Performance Comparison](#performance-comparison)
 
 ---
 
-## Инструкции по реализации
+## Description
 
-### Шаги разработки
-1. Изучение теоретических основ генерации фрактального пламени.
-2. Реализована базовая однопоточная версию алгоритма.
-3. Добавлена поддержка многопоточности для ускорения вычислений.
-4. Реализована конфигурация для управления параметрами (например, число потоков, итерации).
-5. Написаны тесты для всех методов и трансформаций.
+### Functional Features
+
+1. Implementation of a color fractal flame generation algorithm.
+2. Ability to run the program in single-threaded and multi-threaded modes.
+3. Support for configuring generation parameters:
+   - Image size.
+   - Number of iterations.
+   - Set of transformation functions.
+4. More than 15 transformations implemented, including both basic ones from the original article and additional ones.
+
+### Non-Functional Requirements
+
+- The program is easily configurable via a settings file.
+- Multi-threaded implementation demonstrates speedup compared to single-threaded.
+- Published comparative results:
+  - System configuration.
+  - Execution time.
+  - Number of threads used.
 
 ---
 
-## Тестирование
+## Input and Output Data
 
-### Основные проверки
-1. Корректность работы алгоритма на разных наборах параметров.
-2. Написание тестов для трансформаций.
-3. Сравнение производительности однопоточной и многопоточной версий:
-    - Измерение времени выполнения.
-    - Анализ ускорения в зависимости от числа потоков.
+### Input Data
+
+1. Image dimensions (width and height).
+2. Number of iterations for fractal generation.
+3. List of transformation functions and their parameters.
+
+### Output Data
+
+- Generated fractal flame image in PNG format.
 
 ---
 
-## Использование
+## Implementation Instructions
 
-### Запуск проекта
-1. Убедитесь, что у вас установлены:
-    - **JDK 22**.
-    - **Apache Maven 3.9.5** или выше.
-2. Склонируйте проект:
+### Development Steps
+
+1. Study of the theoretical foundations of fractal flame generation.
+2. Implemented basic single-threaded version of the algorithm.
+3. Added multi-threading support to accelerate computations.
+4. Implemented configuration for managing parameters (e.g., number of threads, iterations).
+5. Written tests for all methods and transformations.
+
+---
+
+## Testing
+
+### Main Checks
+
+1. Correctness of the algorithm on different parameter sets.
+2. Writing tests for transformations.
+3. Comparison of single-threaded and multi-threaded performance:
+   - Measuring execution time.
+   - Analyzing speedup depending on the number of threads.
+
+---
+
+## Usage
+
+### Project Launch
+
+1. Make sure you have installed:
+   - **JDK 22**.
+   - **Apache Maven 3.9.5** or higher.
+
+2. Clone the project:
    ```shell
    git clone <repository-url>
    cd backend_academy_2024_project_4-java-Exsellent
    ```
 
-### Сборка проекта
-Для сборки и проверки проекта используйте Maven:
+### Project Build
+
+To build and verify the project, use Maven:
 ```shell
 mvn clean verify
 ```
 
-### Настройка конфигурации
-В файле `config.properties` задайте параметры генерации, такие как размеры изображения, количество потоков, итерации и трансформации.
+### Configuration Setup
 
-Пример:
+In the `config.properties` file, set generation parameters such as image size, number of threads, iterations, and transformations.
+
+Example:
 ```properties
 width=1920
 height=1080
@@ -97,71 +126,67 @@ filename=fractal.png
 
 ---
 
-## Пример запуска
+## Example Launch
 
-### Однопоточный режим
-Запустите приложение с минимальным числом потоков:
+### Single-Threaded Mode
+
+Run the application with minimal number of threads:
 ```shell
 java -jar target/fractal-flame-generator.jar --threads 1
 ```
 
-### Многопоточный режим
-Запустите приложение, указав желаемое число потоков:
+### Multi-Threaded Mode
+
+Run the application, specifying the desired number of threads:
 ```shell
 java -jar target/fractal-flame-generator.jar --threads 8
 ```
 
 ---
 
-## Структура проекта
+## Project Structure
 
 - `src/main/java/backend/academy/FractalFlame`
-    - `components` – базовые компоненты для представления фрактала.
-    - `config` – классы для загрузки и управления настройками.
-    - `processors` – обработчики для постобработки изображений.
-    - `renderers` – классы для генерации изображений (однопоточная и многопоточная реализация).
-    - `transformations` – трансформационные функции (линейные и нелинейные).
-    - `utils` – утилитарные классы, включая логирование и тестирование.
+    - `components` – basic components for representing the fractal.
+    - `config` – classes for loading and managing settings.
+    - `processors` – processors for post-processing images.
+    - `renderers` – classes for image generation (single-threaded and multi-threaded implementations).
+    - `transformations` – transformation functions (linear and non-linear).
+    - `utils` – utility classes, including logging and testing.
 
 ---
 
-## Полезные команды Maven
+## Useful Maven Commands
 
-1. Сборка проекта:
+1. Project build:
    ```shell
    mvn compile
    ```
-2. Запуск тестов:
+
+2. Run tests:
    ```shell
    mvn test
    ```
-3. Линтинг кода:
+
+3. Code linting:
    ```shell
    mvn checkstyle:check
    ```
 
 ---
 
-## Примеры изображений
+## Image Examples
 
-- Примеры сгенерированных фракталов можно найти в директории `output/` после запуска приложения.
-
----
-
-## Сравнение производительности
-
-### Результаты
-| Режим         | Потоки | Время выполнения | Ускорение |
-|---------------|--------|------------------|-----------|
-| Однопоточный  | 1      | 45.943 сек       | 1x        |
-| Многопоточный | 8      | 8.737 сек        | 5.26x     |
-
-### Конфигурация системы
-- **Процессор:** Intel Core i7-12700K
-- **Оперативная память:** 16 GB DDR5
-- **ОС:** Windows 10 Pro x64
+- Examples of generated fractals can be found in the `output/` directory.
 
 ---
-## Авторство
 
-Проект разработан в рамках курса "Академия Бэкенда 2024".
+## Performance Comparison
+
+### Results
+
+| Mode            | Threads | Execution Time | Speedup |
+|-----------------|---------|----------------|---------|
+| Single-threaded | 1       | 45.943 sec     | 1x      |
+| Multi-threaded  | 8       | 8.737 sec      | 5.26x   |
+```
